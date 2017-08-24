@@ -14,6 +14,7 @@
 				8B1FD7341F3BB39C002A2B8C /* ShellScript */,
 			);
 			dependencies = (
+				8B1FD7421F3C4772002A2B8C /* PBXTargetDependency */,
 				8B1FD7311F3BB383002A2B8C /* PBXTargetDependency */,
 				8B1FD7331F3BB383002A2B8C /* PBXTargetDependency */,
 			);
@@ -104,6 +105,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8B1FD6201F3BAEF1002A2B8C;
 			remoteInfo = CXSystemLoader;
+		};
+		8B1FD7411F3C4772002A2B8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1FD7351F3BB452002A2B8C /* cartool.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B80F73F1F32AEC3006CE459;
+			remoteInfo = cartool;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -763,7 +771,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"${BUILT_PRODUCTS_DIR}\"\n\nmkdir -p boot\ncp KernelLoader boot/KernelLoader\ncp Kernel boot/Kernel\ntouch boot/BootConfig\n\nrm -f BootX.car\n\"${SRCROOT}/cartool\" -c --subtype=BootX --arch=x86_64 --bootID=0x0048 --kernel-loader=boot/KernelLoader --kernel=boot/Kernel --boot-config=boot/BootConfig boot BootX.car\n\nmkdir -p System/boot\ncp BootX.car System/boot/BootX.car\n\nBUILD_COUNTER=$(cat \"${SRCROOT}/build_number\")\nBUILD_ID=$((BUILD_COUNTER + 1))\necho ${BUILD_ID} > \"${SRCROOT}/build_number\"\n\nrm -f SystemImage.car\n\"${SRCROOT}/cartool\" -c --subtype=SystemImage --os-type=Corona-X --os-major-version=1 --os-revision=A --build-type=development --build-id=${BUILD_ID} System SystemImage.car\n";
+			shellScript = "cd \"${BUILT_PRODUCTS_DIR}\"\n\nmkdir -p boot\ncp KernelLoader boot/KernelLoader\ncp Kernel boot/Kernel\ntouch boot/BootConfig\n\nrm -f BootX.car\n./cartool -c --subtype=BootX --arch=x86_64 --bootID=0x0048 --kernel-loader=boot/KernelLoader --kernel=boot/Kernel --boot-config=boot/BootConfig boot BootX.car\n\nmkdir -p System/boot\ncp BootX.car System/boot/BootX.car\n\nBUILD_COUNTER=$(cat \"${SRCROOT}/build_number\")\nBUILD_ID=$((BUILD_COUNTER + 1))\necho ${BUILD_ID} > \"${SRCROOT}/build_number\"\n\nrm -f SystemImage.car\n./cartool -c --subtype=SystemImage --os-type=Corona-X --os-major-version=1 --os-revision=A --build-type=development --build-id=${BUILD_ID} System SystemImage.car\n";
 		};
 		8B1FD73D1F3BB54C002A2B8C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -776,7 +784,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# assumes image is mounted at /tmp/corona/mnt\n\ncd \"${BUILT_PRODUCTS_DIR}\"\n\nmkdir -p /tmp/corona/mnt/EFI/corona\ncp CXSystemLoader.efi /tmp/corona/mnt/EFI/corona/\n";
+			shellScript = "# assumes image is mounted at /tmp/corona/mnt\n\ncd \"${BUILT_PRODUCTS_DIR}\"\n\n# QEMU doesn't let me debug on a USB while it's mounted...\ndiskutil mount -mountPoint /tmp/corona/mnt /dev/disk2s1\n\nmkdir -p /tmp/corona/mnt/EFI/corona\ncp CXSystemLoader.efi /tmp/corona/mnt/EFI/corona/\n\ndiskutil unmountDisk /dev/disk2\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -857,6 +865,11 @@
 			isa = PBXTargetDependency;
 			target = 8B1FD6201F3BAEF1002A2B8C /* CXSystemLoader */;
 			targetProxy = 8B1FD73B1F3BB507002A2B8C /* PBXContainerItemProxy */;
+		};
+		8B1FD7421F3C4772002A2B8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = cartool;
+			targetProxy = 8B1FD7411F3C4772002A2B8C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1134,6 +1147,7 @@
 				8B1FD6101F3BAECF002A2B8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B1FD61A1F3BAEE1002A2B8C /* Build configuration list for PBXNativeTarget "KernelLoader" */ = {
 			isa = XCConfigurationList;
@@ -1143,6 +1157,7 @@
 				8B1FD61C1F3BAEE1002A2B8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B1FD6221F3BAEF1002A2B8C /* Build configuration list for PBXNativeTarget "CXSystemLoader" */ = {
 			isa = XCConfigurationList;
@@ -1152,6 +1167,7 @@
 				8B1FD6241F3BAEF1002A2B8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B1FD62E1F3BAF0C002A2B8C /* Build configuration list for PBXAggregateTarget "System Image" */ = {
 			isa = XCConfigurationList;
@@ -1161,6 +1177,7 @@
 				8B1FD6301F3BAF0C002A2B8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B1FD6321F3BAF1F002A2B8C /* Build configuration list for PBXAggregateTarget "System Loader (Package)" */ = {
 			isa = XCConfigurationList;
@@ -1170,6 +1187,7 @@
 				8B1FD6341F3BAF1F002A2B8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
