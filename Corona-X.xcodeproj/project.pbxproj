@@ -11,9 +11,10 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 8B1FD62E1F3BAF0C002A2B8C /* Build configuration list for PBXAggregateTarget "System Image" */;
 			buildPhases = (
-				8B1FD7341F3BB39C002A2B8C /* ShellScript */,
+				8B1FD7341F3BB39C002A2B8C /* Run Script */,
 			);
 			dependencies = (
+				8BB5829420F7EB2E0066FD84 /* PBXTargetDependency */,
 				8B1FD7421F3C4772002A2B8C /* PBXTargetDependency */,
 				8B1FD7311F3BB383002A2B8C /* PBXTargetDependency */,
 				8B1FD7331F3BB383002A2B8C /* PBXTargetDependency */,
@@ -25,13 +26,37 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 8B1FD6321F3BAF1F002A2B8C /* Build configuration list for PBXAggregateTarget "System Loader (Package)" */;
 			buildPhases = (
-				8B1FD73D1F3BB54C002A2B8C /* ShellScript */,
+				8B1FD73D1F3BB54C002A2B8C /* Run Script */,
 			);
 			dependencies = (
 				8B1FD73C1F3BB507002A2B8C /* PBXTargetDependency */,
 			);
 			name = "System Loader (Package)";
 			productName = "System Loader";
+		};
+		8BB5828E20F7EACB0066FD84 /* CopySystemHeaders */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8BB5829220F7EACB0066FD84 /* Build configuration list for PBXAggregateTarget "CopySystemHeaders" */;
+			buildPhases = (
+				8BB5829520F7EB320066FD84 /* CopyFiles */,
+				8BB5829720F7EB650066FD84 /* CopyFiles */,
+				8BB5829920F7EB740066FD84 /* CopyFiles */,
+				8BB5829A20F7EB7D0066FD84 /* CopyFiles */,
+				8BB5829B20F7EB7E0066FD84 /* CopyFiles */,
+				8BB5829C20F7EB7F0066FD84 /* CopyFiles */,
+				8BB582A820F7EBEB0066FD84 /* CopyFiles */,
+				8BB582B120F7EC040066FD84 /* CopyFiles */,
+				8BB582B220F7EC060066FD84 /* CopyFiles */,
+				8BB582B320F7EC070066FD84 /* CopyFiles */,
+				8BB582B420F7EC080066FD84 /* CopyFiles */,
+				8BB582C720F7EC720066FD84 /* CopyFiles */,
+				8BB582C820F7EC730066FD84 /* CopyFiles */,
+				8BB582C920F7EC740066FD84 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = CopySystemHeaders;
+			productName = CopySystemHeaders;
 		};
 /* End PBXAggregateTarget section */
 
@@ -75,6 +100,60 @@
 		8B1FD72A1F3BB2E3002A2B8C /* SLLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD67C1F3BB12F002A2B8C /* SLLoader.c */; };
 		8B1FD72B1F3BB2E3002A2B8C /* SLSystemLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD67D1F3BB12F002A2B8C /* SLSystemLoader.c */; };
 		8B1FD72E1F3BB2FE002A2B8C /* CXSystemLoader.order in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6771F3BB12F002A2B8C /* CXSystemLoader.order */; };
+		8BA52D44203D3F220096A9C6 /* XKSerial.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD69F1F3BB142002A2B8C /* XKSerial.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
+		8BB5829620F7EB4A0066FD84 /* Corona-X.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6B41F3BB169002A2B8C /* Corona-X.h */; };
+		8BB5829820F7EB710066FD84 /* Kernel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6ED1F3BB1D3002A2B8C /* Kernel.h */; };
+		8BB5829D20F7EB890066FD84 /* XKMemory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6EF1F3BB1EC002A2B8C /* XKMemory.h */; };
+		8BB5829E20F7EB890066FD84 /* XKStandardIO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F01F3BB1EC002A2B8C /* XKStandardIO.h */; };
+		8BB5829F20F7EB890066FD84 /* XKUnicode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F11F3BB1EC002A2B8C /* XKUnicode.h */; };
+		8BB582A020F7EB890066FD84 /* XKernelC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F21F3BB1EC002A2B8C /* XKernelC.h */; };
+		8BB582A120F7EBBF0066FD84 /* CoreDriver.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD7031F3BB1F5002A2B8C /* CoreDriver.h */; };
+		8BB582A220F7EBD00066FD84 /* CPBase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6FE1F3BB1F5002A2B8C /* CPBase.h */; };
+		8BB582A320F7EBD00066FD84 /* CPDriverState.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6FF1F3BB1F5002A2B8C /* CPDriverState.h */; };
+		8BB582A420F7EBD00066FD84 /* CPInterruptTable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD7001F3BB1F5002A2B8C /* CPInterruptTable.h */; };
+		8BB582A520F7EBD00066FD84 /* CPRootTable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD7011F3BB1F5002A2B8C /* CPRootTable.h */; };
+		8BB582A620F7EBD00066FD84 /* CorePower.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD7021F3BB1F5002A2B8C /* CorePower.h */; };
+		8BB582A720F7EBDF0066FD84 /* CDPCIE.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD7051F3BB1F5002A2B8C /* CDPCIE.h */; };
+		8BB582A920F7EBF60066FD84 /* XKAssemblyCode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F41F3BB1EC002A2B8C /* XKAssemblyCode.h */; };
+		8BB582AA20F7EBF60066FD84 /* XKDebugLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F51F3BB1EC002A2B8C /* XKDebugLog.h */; };
+		8BB582AB20F7EBF60066FD84 /* XKLegacy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F61F3BB1EC002A2B8C /* XKLegacy.h */; };
+		8BB582AC20F7EBF60066FD84 /* XKLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F71F3BB1EC002A2B8C /* XKLog.h */; };
+		8BB582AD20F7EBF60066FD84 /* XKProcessorState.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F81F3BB1EC002A2B8C /* XKProcessorState.h */; };
+		8BB582AE20F7EBF60066FD84 /* XKShared.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F91F3BB1EC002A2B8C /* XKShared.h */; };
+		8BB582AF20F7EBF60066FD84 /* XKSharedTarget.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6FA1F3BB1EC002A2B8C /* XKSharedTarget.h */; };
+		8BB582B020F7EBF60066FD84 /* XKUtilities.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6FB1F3BB1EC002A2B8C /* XKUtilities.h */; };
+		8BB582BC20F7EC290066FD84 /* OSByteMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6CD1F3BB169002A2B8C /* OSByteMacros.h */; };
+		8BB582BD20F7EC290066FD84 /* OSCompilerMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6CE1F3BB169002A2B8C /* OSCompilerMacros.h */; };
+		8BB582BE20F7EC290066FD84 /* OSEndian.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6CF1F3BB169002A2B8C /* OSEndian.h */; };
+		8BB582BF20F7EC290066FD84 /* OSTypes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6D01F3BB169002A2B8C /* OSTypes.h */; };
+		8BB582C020F7EC290066FD84 /* OSUID.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6D11F3BB169002A2B8C /* OSUID.h */; };
+		8BB582C120F7EC290066FD84 /* OSVersion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6D21F3BB169002A2B8C /* OSVersion.h */; };
+		8BB582C220F7EC290066FD84 /* System.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6D31F3BB169002A2B8C /* System.h */; };
+		8BB582C320F7EC360066FD84 /* OSCX.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6C81F3BB169002A2B8C /* OSCX.h */; };
+		8BB582C420F7EC360066FD84 /* OSELF.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6C91F3BB169002A2B8C /* OSELF.h */; };
+		8BB582C520F7EC360066FD84 /* OSMach-O.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6CA1F3BB169002A2B8C /* OSMach-O.h */; };
+		8BB582C620F7EC3E0066FD84 /* OSCAR.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6C61F3BB169002A2B8C /* OSCAR.h */; };
+		8BB582CA20F7EC860066FD84 /* OSGPT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6CC1F3BB169002A2B8C /* OSGPT.h */; };
+		8BB582CB20F7ECA10066FD84 /* SLBase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E11F3BB195002A2B8C /* SLBase.h */; };
+		8BB582CC20F7ECA10066FD84 /* SLBasicDebug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E21F3BB195002A2B8C /* SLBasicDebug.h */; };
+		8BB582CD20F7ECA10066FD84 /* SLBasicIO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E31F3BB195002A2B8C /* SLBasicIO.h */; };
+		8BB582CE20F7ECA10066FD84 /* SLConfigFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E41F3BB195002A2B8C /* SLConfigFile.h */; };
+		8BB582CF20F7ECA10066FD84 /* SLLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E51F3BB195002A2B8C /* SLLibrary.h */; };
+		8BB582D020F7ECA10066FD84 /* SLLoader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E61F3BB195002A2B8C /* SLLoader.h */; };
+		8BB582D120F7ECA10066FD84 /* SLMach-O.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E71F3BB195002A2B8C /* SLMach-O.h */; };
+		8BB582D220F7ECA10066FD84 /* SLMemoryAllocator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E81F3BB195002A2B8C /* SLMemoryAllocator.h */; };
+		8BB582D320F7ECA10066FD84 /* SLSystemLoader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E91F3BB195002A2B8C /* SLSystemLoader.h */; };
+		8BB582D420F7ECA10066FD84 /* SystemLoader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6EA1F3BB195002A2B8C /* SystemLoader.h */; };
+		8BB582D520F7ECB90066FD84 /* SLBlockIO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6D61F3BB195002A2B8C /* SLBlockIO.h */; };
+		8BB582D620F7ECB90066FD84 /* SLBootConsole.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6D71F3BB195002A2B8C /* SLBootConsole.h */; };
+		8BB582D720F7ECB90066FD84 /* SLBootServices.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6D81F3BB195002A2B8C /* SLBootServices.h */; };
+		8BB582D820F7ECB90066FD84 /* SLEFI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6D91F3BB195002A2B8C /* SLEFI.h */; };
+		8BB582D920F7ECB90066FD84 /* SLFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6DA1F3BB195002A2B8C /* SLFile.h */; };
+		8BB582DA20F7ECB90066FD84 /* SLGraphics.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6DB1F3BB195002A2B8C /* SLGraphics.h */; };
+		8BB582DB20F7ECB90066FD84 /* SLLoadedImage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6DC1F3BB195002A2B8C /* SLLoadedImage.h */; };
+		8BB582DC20F7ECB90066FD84 /* SLRuntimeServices.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6DD1F3BB195002A2B8C /* SLRuntimeServices.h */; };
+		8BB582DD20F7ECB90066FD84 /* SLSystemTable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6DE1F3BB195002A2B8C /* SLSystemTable.h */; };
+		8BB582DE20F7ECC00066FD84 /* SLDebug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E01F3BB195002A2B8C /* SLDebug.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +192,13 @@
 			remoteGlobalIDString = 8B80F73F1F32AEC3006CE459;
 			remoteInfo = cartool;
 		};
+		8BB5829320F7EB2E0066FD84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1FD6001F3BAEB1002A2B8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BB5828E20F7EACB0066FD84;
+			remoteInfo = CopySystemHeaders;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -141,6 +227,185 @@
 			dstSubfolderSpec = 16;
 			files = (
 				8B1FD72E1F3BB2FE002A2B8C /* CXSystemLoader.order in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB5829520F7EB320066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB5829620F7EB4A0066FD84 /* Corona-X.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB5829720F7EB650066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/Kernel.framework/Headers";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB5829820F7EB710066FD84 /* Kernel.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB5829920F7EB740066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/Kernel.framework/Headers/C";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB5829D20F7EB890066FD84 /* XKMemory.h in CopyFiles */,
+				8BB5829E20F7EB890066FD84 /* XKStandardIO.h in CopyFiles */,
+				8BB5829F20F7EB890066FD84 /* XKUnicode.h in CopyFiles */,
+				8BB582A020F7EB890066FD84 /* XKernelC.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB5829A20F7EB7D0066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/Kernel.framework/Headers/CoreDriver";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB582A120F7EBBF0066FD84 /* CoreDriver.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB5829B20F7EB7E0066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/Kernel.framework/Headers/CoreDriver/ACPI";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB582A220F7EBD00066FD84 /* CPBase.h in CopyFiles */,
+				8BB582A320F7EBD00066FD84 /* CPDriverState.h in CopyFiles */,
+				8BB582A420F7EBD00066FD84 /* CPInterruptTable.h in CopyFiles */,
+				8BB582A520F7EBD00066FD84 /* CPRootTable.h in CopyFiles */,
+				8BB582A620F7EBD00066FD84 /* CorePower.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB5829C20F7EB7F0066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/Kernel.framework/Headers/CoreDriver/PCIe";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB582A720F7EBDF0066FD84 /* CDPCIE.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB582A820F7EBEB0066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/Kernel.framework/Headers";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB582A920F7EBF60066FD84 /* XKAssemblyCode.h in CopyFiles */,
+				8BB582AA20F7EBF60066FD84 /* XKDebugLog.h in CopyFiles */,
+				8BB582AB20F7EBF60066FD84 /* XKLegacy.h in CopyFiles */,
+				8BB582AC20F7EBF60066FD84 /* XKLog.h in CopyFiles */,
+				8BB582AD20F7EBF60066FD84 /* XKProcessorState.h in CopyFiles */,
+				8BB582AE20F7EBF60066FD84 /* XKShared.h in CopyFiles */,
+				8BB582AF20F7EBF60066FD84 /* XKSharedTarget.h in CopyFiles */,
+				8BB582B020F7EBF60066FD84 /* XKUtilities.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB582B120F7EC040066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/System.framework/Headers";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB582BC20F7EC290066FD84 /* OSByteMacros.h in CopyFiles */,
+				8BB582BD20F7EC290066FD84 /* OSCompilerMacros.h in CopyFiles */,
+				8BB582BE20F7EC290066FD84 /* OSEndian.h in CopyFiles */,
+				8BB582BF20F7EC290066FD84 /* OSTypes.h in CopyFiles */,
+				8BB582C020F7EC290066FD84 /* OSUID.h in CopyFiles */,
+				8BB582C120F7EC290066FD84 /* OSVersion.h in CopyFiles */,
+				8BB582C220F7EC290066FD84 /* System.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB582B220F7EC060066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/System.framework/Headers/Executables";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB582C320F7EC360066FD84 /* OSCX.h in CopyFiles */,
+				8BB582C420F7EC360066FD84 /* OSELF.h in CopyFiles */,
+				8BB582C520F7EC360066FD84 /* OSMach-O.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB582B320F7EC070066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/System.framework/Headers/Archives";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB582C620F7EC3E0066FD84 /* OSCAR.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB582B420F7EC080066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/System.framework/Headers/Filesystems";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB582CA20F7EC860066FD84 /* OSGPT.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB582C720F7EC720066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/SystemLoader.framework/PrivateHeaders";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB582CB20F7ECA10066FD84 /* SLBase.h in CopyFiles */,
+				8BB582CC20F7ECA10066FD84 /* SLBasicDebug.h in CopyFiles */,
+				8BB582CD20F7ECA10066FD84 /* SLBasicIO.h in CopyFiles */,
+				8BB582CE20F7ECA10066FD84 /* SLConfigFile.h in CopyFiles */,
+				8BB582CF20F7ECA10066FD84 /* SLLibrary.h in CopyFiles */,
+				8BB582D020F7ECA10066FD84 /* SLLoader.h in CopyFiles */,
+				8BB582D120F7ECA10066FD84 /* SLMach-O.h in CopyFiles */,
+				8BB582D220F7ECA10066FD84 /* SLMemoryAllocator.h in CopyFiles */,
+				8BB582D320F7ECA10066FD84 /* SLSystemLoader.h in CopyFiles */,
+				8BB582D420F7ECA10066FD84 /* SystemLoader.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB582C820F7EC730066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/SystemLoader.framework/PrivateHeaders/EFI";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB582D520F7ECB90066FD84 /* SLBlockIO.h in CopyFiles */,
+				8BB582D620F7ECB90066FD84 /* SLBootConsole.h in CopyFiles */,
+				8BB582D720F7ECB90066FD84 /* SLBootServices.h in CopyFiles */,
+				8BB582D820F7ECB90066FD84 /* SLEFI.h in CopyFiles */,
+				8BB582D920F7ECB90066FD84 /* SLFile.h in CopyFiles */,
+				8BB582DA20F7ECB90066FD84 /* SLGraphics.h in CopyFiles */,
+				8BB582DB20F7ECB90066FD84 /* SLLoadedImage.h in CopyFiles */,
+				8BB582DC20F7ECB90066FD84 /* SLRuntimeServices.h in CopyFiles */,
+				8BB582DD20F7ECB90066FD84 /* SLSystemTable.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB582C920F7EC740066FD84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SYSTEM_ROOT}/Frameworks/SystemLoader.framework/PrivateHeaders/Kernel";
+			dstSubfolderSpec = 16;
+			files = (
+				8BB582DE20F7ECC00066FD84 /* SLDebug.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +936,7 @@
 		8B1FD6001F3BAEB1002A2B8C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0920;
 				TargetAttributes = {
 					8B1FD6091F3BAECF002A2B8C = {
 						CreatedOnToolsVersion = 8.1;
@@ -691,6 +956,10 @@
 					};
 					8B1FD6311F3BAF1F002A2B8C = {
 						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					8BB5828E20F7EACB0066FD84 = {
+						CreatedOnToolsVersion = 10.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -718,6 +987,7 @@
 				8B1FD6201F3BAEF1002A2B8C /* CXSystemLoader */,
 				8B1FD62D1F3BAF0C002A2B8C /* System Image */,
 				8B1FD6311F3BAF1F002A2B8C /* System Loader (Package) */,
+				8BB5828E20F7EACB0066FD84 /* CopySystemHeaders */,
 			);
 		};
 /* End PBXProject section */
@@ -760,26 +1030,28 @@
 			shellPath = /bin/sh;
 			shellScript = "cd \"${BUILT_PRODUCTS_DIR}\"\n\n\"${SRCROOT}/mtoc\" -subsystem application -e __SLEntry ${TARGET_NAME}.${EXECUTABLE_EXTENSION} ${TARGET_NAME}.efi\n";
 		};
-		8B1FD7341F3BB39C002A2B8C /* ShellScript */ = {
+		8B1FD7341F3BB39C002A2B8C /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"${BUILT_PRODUCTS_DIR}\"\n\nmkdir -p boot\ncp KernelLoader boot/KernelLoader\ncp Kernel boot/Kernel\ntouch boot/BootConfig\n\nrm -f BootX.car\n./cartool -c --subtype=BootX --arch=x86_64 --bootID=0x0048 --kernel-loader=boot/KernelLoader --kernel=boot/Kernel --boot-config=boot/BootConfig boot BootX.car\n\nmkdir -p System/boot\ncp BootX.car System/boot/BootX.car\n\nBUILD_COUNTER=$(cat \"${SRCROOT}/build_number\")\nBUILD_ID=$((BUILD_COUNTER + 1))\necho ${BUILD_ID} > \"${SRCROOT}/build_number\"\n\nrm -f SystemImage.car\n./cartool -c --subtype=SystemImage --os-type=Corona-X --os-major-version=1 --os-revision=A --build-type=development --build-id=${BUILD_ID} System SystemImage.car\n";
+			shellScript = "cd \"${BUILT_PRODUCTS_DIR}\"\n\nmkdir -p boot\ncp KernelLoader boot/KernelLoader\ncp Kernel boot/Kernel\ntouch boot/BootConfig\n\nrm -f BootX.car\n./cartool -c --subtype=BootX --arch=x86_64 --bootID=0x0048 --kernel-loader=boot/KernelLoader --kernel=boot/Kernel --boot-config=boot/BootConfig boot BootX.car\n\nmkdir -p ${SYSTEM_ROOT}/boot\ncp BootX.car ${SYSTEM_ROOT}/boot/BootX.car\n\nBUILD_COUNTER=$(cat \"${SRCROOT}/build_number\")\nBUILD_ID=$((BUILD_COUNTER + 1))\necho ${BUILD_ID} > \"${SRCROOT}/build_number\"\n\nrm -f SystemImage.car\n./cartool -c --subtype=SystemImage --os-type=Corona-X --os-major-version=1 --os-revision=A --build-type=development --build-id=${BUILD_ID} --boot-archive=${SYSTEM_ROOT}/boot/BootX.car System SystemImage.car\n";
 		};
-		8B1FD73D1F3BB54C002A2B8C /* ShellScript */ = {
+		8B1FD73D1F3BB54C002A2B8C /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -804,6 +1076,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA52D44203D3F220096A9C6 /* XKSerial.s in Sources */,
 				8B1FD7181F3BB290002A2B8C /* CXKernelLoader.c in Sources */,
 				8B1FD7191F3BB2AD002A2B8C /* SLSymbolStubs.c in Sources */,
 				8B1FD70D1F3BB286002A2B8C /* SLBlockIO.c in Sources */,
@@ -871,6 +1144,11 @@
 			name = cartool;
 			targetProxy = 8B1FD7411F3C4772002A2B8C /* PBXContainerItemProxy */;
 		};
+		8BB5829420F7EB2E0066FD84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BB5828E20F7EACB0066FD84 /* CopySystemHeaders */;
+			targetProxy = 8BB5829320F7EB2E0066FD84 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -878,6 +1156,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8B1FD6371F3BAF35002A2B8C /* debug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				SYSTEM_ROOT = System;
 			};
 			name = Debug;
 		};
@@ -885,6 +1165,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8B1FD6391F3BAF35002A2B8C /* release.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				SYSTEM_ROOT = System;
 			};
 			name = Release;
 		};
@@ -941,6 +1223,8 @@
 					"-rdynamic",
 					"-Wl,-version_load_command",
 					"-fapple-kext",
+					"-fpie",
+					"-Wl,-pagezero_size,0x0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -965,6 +1249,8 @@
 					"-rdynamic",
 					"-Wl,-version_load_command",
 					"-fapple-kext",
+					"-fpie",
+					"-Wl,-pagezero_size,0x0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1046,6 +1332,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8B1FD6381F3BAF35002A2B8C /* development.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				SYSTEM_ROOT = System;
 			};
 			name = Development;
 		};
@@ -1085,6 +1373,8 @@
 					"-rdynamic",
 					"-Wl,-version_load_command",
 					"-fapple-kext",
+					"-fpie",
+					"-Wl,-pagezero_size,0x0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1125,6 +1415,30 @@
 				PRODUCT_NAME = CXSystemLoader.efi;
 			};
 			name = Development;
+		};
+		8BB5828F20F7EACB0066FD84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8BB5829020F7EACB0066FD84 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Development;
+		};
+		8BB5829120F7EACB0066FD84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1185,6 +1499,16 @@
 				8B1FD6331F3BAF1F002A2B8C /* Debug */,
 				8B1FD6401F3BAF39002A2B8C /* Development */,
 				8B1FD6341F3BAF1F002A2B8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BB5829220F7EACB0066FD84 /* Build configuration list for PBXAggregateTarget "CopySystemHeaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB5828F20F7EACB0066FD84 /* Debug */,
+				8BB5829020F7EACB0066FD84 /* Development */,
+				8BB5829120F7EACB0066FD84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
