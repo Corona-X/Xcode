@@ -61,46 +61,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		8B0D46E221A3EFD2009C1AB9 /* SLBootServices.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D46E021A2C1BF009C1AB9 /* SLBootServices.c */; };
+		8B0D46E321A3F045009C1AB9 /* SLRuntimeServices.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB582E820F8902E0066FD84 /* SLRuntimeServices.c */; };
+		8B0D46E921A406A0009C1AB9 /* SLSerialConsole.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D46E721A40678009C1AB9 /* SLSerialConsole.c */; };
+		8B0D46EA21A40CFF009C1AB9 /* XKBootConfig.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B0D46E421A40031009C1AB9 /* XKBootConfig.c */; };
 		8B1FD7061F3BB206002A2B8C /* stub.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6A91F3BB151002A2B8C /* stub.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
-		8B1FD7071F3BB214002A2B8C /* XKMemory.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6971F3BB142002A2B8C /* XKMemory.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
-		8B1FD7081F3BB214002A2B8C /* XKStandardIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6981F3BB142002A2B8C /* XKStandardIO.c */; };
-		8B1FD7091F3BB214002A2B8C /* XKUnicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6991F3BB142002A2B8C /* XKUnicode.c */; };
-		8B1FD70A1F3BB27B002A2B8C /* XKMemory.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6971F3BB142002A2B8C /* XKMemory.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
-		8B1FD70B1F3BB27B002A2B8C /* XKStandardIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6981F3BB142002A2B8C /* XKStandardIO.c */; };
-		8B1FD70C1F3BB27B002A2B8C /* XKUnicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6991F3BB142002A2B8C /* XKUnicode.c */; };
-		8B1FD70D1F3BB286002A2B8C /* SLBlockIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66B1F3BB12F002A2B8C /* SLBlockIO.c */; };
-		8B1FD70E1F3BB286002A2B8C /* SLBootServices.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66C1F3BB12F002A2B8C /* SLBootServices.c */; };
-		8B1FD70F1F3BB286002A2B8C /* SLFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66D1F3BB12F002A2B8C /* SLFile.c */; };
-		8B1FD7101F3BB286002A2B8C /* SLGraphics.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66E1F3BB12F002A2B8C /* SLGraphics.c */; };
-		8B1FD7111F3BB286002A2B8C /* SLLoadedImage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66F1F3BB12F002A2B8C /* SLLoadedImage.c */; };
-		8B1FD7121F3BB286002A2B8C /* SLRuntimeServices.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6701F3BB12F002A2B8C /* SLRuntimeServices.c */; };
-		8B1FD7131F3BB286002A2B8C /* SLSystemTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6711F3BB12F002A2B8C /* SLSystemTable.c */; };
-		8B1FD7141F3BB286002A2B8C /* SLBasicDebug.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6721F3BB12F002A2B8C /* SLBasicDebug.c */; };
-		8B1FD7151F3BB286002A2B8C /* SLLibrary.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6731F3BB12F002A2B8C /* SLLibrary.c */; };
-		8B1FD7161F3BB286002A2B8C /* SLMach-O.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6741F3BB12F002A2B8C /* SLMach-O.c */; };
-		8B1FD7171F3BB286002A2B8C /* SLMemoryAllocator.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6751F3BB12F002A2B8C /* SLMemoryAllocator.c */; };
-		8B1FD7181F3BB290002A2B8C /* CXKernelLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6621F3BB12F002A2B8C /* CXKernelLoader.c */; };
-		8B1FD7191F3BB2AD002A2B8C /* SLSymbolStubs.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6661F3BB12F002A2B8C /* SLSymbolStubs.c */; };
-		8B1FD71A1F3BB2CE002A2B8C /* XKMemory.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6971F3BB142002A2B8C /* XKMemory.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
-		8B1FD71B1F3BB2DC002A2B8C /* SLBlockIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66B1F3BB12F002A2B8C /* SLBlockIO.c */; };
-		8B1FD71C1F3BB2DC002A2B8C /* SLBootServices.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66C1F3BB12F002A2B8C /* SLBootServices.c */; };
-		8B1FD71D1F3BB2DC002A2B8C /* SLFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66D1F3BB12F002A2B8C /* SLFile.c */; };
-		8B1FD71E1F3BB2DC002A2B8C /* SLGraphics.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66E1F3BB12F002A2B8C /* SLGraphics.c */; };
-		8B1FD71F1F3BB2DC002A2B8C /* SLLoadedImage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66F1F3BB12F002A2B8C /* SLLoadedImage.c */; };
-		8B1FD7201F3BB2DC002A2B8C /* SLRuntimeServices.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6701F3BB12F002A2B8C /* SLRuntimeServices.c */; };
-		8B1FD7211F3BB2DC002A2B8C /* SLSystemTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6711F3BB12F002A2B8C /* SLSystemTable.c */; };
-		8B1FD7221F3BB2DC002A2B8C /* SLBasicDebug.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6721F3BB12F002A2B8C /* SLBasicDebug.c */; };
-		8B1FD7231F3BB2DC002A2B8C /* SLLibrary.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6731F3BB12F002A2B8C /* SLLibrary.c */; };
-		8B1FD7241F3BB2DC002A2B8C /* SLMach-O.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6741F3BB12F002A2B8C /* SLMach-O.c */; };
-		8B1FD7251F3BB2DC002A2B8C /* SLMemoryAllocator.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6751F3BB12F002A2B8C /* SLMemoryAllocator.c */; };
-		8B1FD7261F3BB2E3002A2B8C /* CXSystemLoader.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6781F3BB12F002A2B8C /* CXSystemLoader.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
-		8B1FD7271F3BB2E3002A2B8C /* SLBasicIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6791F3BB12F002A2B8C /* SLBasicIO.c */; };
-		8B1FD7281F3BB2E3002A2B8C /* SLBootConsole.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD67A1F3BB12F002A2B8C /* SLBootConsole.c */; };
-		8B1FD7291F3BB2E3002A2B8C /* SLConfigFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD67B1F3BB12F002A2B8C /* SLConfigFile.c */; };
-		8B1FD72A1F3BB2E3002A2B8C /* SLLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD67C1F3BB12F002A2B8C /* SLLoader.c */; };
-		8B1FD72B1F3BB2E3002A2B8C /* SLSystemLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD67D1F3BB12F002A2B8C /* SLSystemLoader.c */; };
 		8B1FD72E1F3BB2FE002A2B8C /* CXSystemLoader.order in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6771F3BB12F002A2B8C /* CXSystemLoader.order */; };
-		8BA52D44203D3F220096A9C6 /* XKSerial.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD69F1F3BB142002A2B8C /* XKSerial.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
 		8BB5829620F7EB4A0066FD84 /* Corona-X.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6B41F3BB169002A2B8C /* Corona-X.h */; };
 		8BB5829820F7EB710066FD84 /* Kernel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6ED1F3BB1D3002A2B8C /* Kernel.h */; };
 		8BB5829D20F7EB890066FD84 /* XKMemory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6EF1F3BB1EC002A2B8C /* XKMemory.h */; };
@@ -135,9 +101,8 @@
 		8BB582C620F7EC3E0066FD84 /* OSCAR.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6C61F3BB169002A2B8C /* OSCAR.h */; };
 		8BB582CA20F7EC860066FD84 /* OSGPT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6CC1F3BB169002A2B8C /* OSGPT.h */; };
 		8BB582CB20F7ECA10066FD84 /* SLBase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E11F3BB195002A2B8C /* SLBase.h */; };
-		8BB582CC20F7ECA10066FD84 /* SLBasicDebug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E21F3BB195002A2B8C /* SLBasicDebug.h */; };
 		8BB582CD20F7ECA10066FD84 /* SLBasicIO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E31F3BB195002A2B8C /* SLBasicIO.h */; };
-		8BB582CE20F7ECA10066FD84 /* SLConfigFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E41F3BB195002A2B8C /* SLConfigFile.h */; };
+		8BB582CE20F7ECA10066FD84 /* SLConfig.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E41F3BB195002A2B8C /* SLConfig.h */; };
 		8BB582CF20F7ECA10066FD84 /* SLLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E51F3BB195002A2B8C /* SLLibrary.h */; };
 		8BB582D020F7ECA10066FD84 /* SLLoader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E61F3BB195002A2B8C /* SLLoader.h */; };
 		8BB582D120F7ECA10066FD84 /* SLMach-O.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E71F3BB195002A2B8C /* SLMach-O.h */; };
@@ -147,16 +112,53 @@
 		8BB582D520F7ECB90066FD84 /* SLBlockIO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6D61F3BB195002A2B8C /* SLBlockIO.h */; };
 		8BB582D620F7ECB90066FD84 /* SLBootConsole.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6D71F3BB195002A2B8C /* SLBootConsole.h */; };
 		8BB582D720F7ECB90066FD84 /* SLBootServices.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6D81F3BB195002A2B8C /* SLBootServices.h */; };
-		8BB582D820F7ECB90066FD84 /* SLEFI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6D91F3BB195002A2B8C /* SLEFI.h */; };
 		8BB582D920F7ECB90066FD84 /* SLFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6DA1F3BB195002A2B8C /* SLFile.h */; };
 		8BB582DA20F7ECB90066FD84 /* SLGraphics.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6DB1F3BB195002A2B8C /* SLGraphics.h */; };
 		8BB582DB20F7ECB90066FD84 /* SLLoadedImage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6DC1F3BB195002A2B8C /* SLLoadedImage.h */; };
 		8BB582DC20F7ECB90066FD84 /* SLRuntimeServices.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6DD1F3BB195002A2B8C /* SLRuntimeServices.h */; };
 		8BB582DD20F7ECB90066FD84 /* SLSystemTable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6DE1F3BB195002A2B8C /* SLSystemTable.h */; };
 		8BB582DE20F7ECC00066FD84 /* SLDebug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6E01F3BB195002A2B8C /* SLDebug.h */; };
+		8BB5830A20F9DF3A0066FD84 /* SLLibrary.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6731F3BB12F002A2B8C /* SLLibrary.c */; };
+		8BB5830B20F9DF3A0066FD84 /* SLMach-O.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6741F3BB12F002A2B8C /* SLMach-O.c */; };
+		8BB5830C20F9DF3A0066FD84 /* SLBasicIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6791F3BB12F002A2B8C /* SLBasicIO.c */; };
+		8BB5830D20F9DF3A0066FD84 /* SLMemoryAllocator.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6751F3BB12F002A2B8C /* SLMemoryAllocator.c */; };
+		8BB5830E20F9DF560066FD84 /* SLLoadedImage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66F1F3BB12F002A2B8C /* SLLoadedImage.c */; };
+		8BB5830F20F9DF560066FD84 /* SLBlockIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66B1F3BB12F002A2B8C /* SLBlockIO.c */; };
+		8BB5831020F9DF560066FD84 /* SLFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD66D1F3BB12F002A2B8C /* SLFile.c */; };
+		8BB5831120F9DF5C0066FD84 /* CXSystemLoader.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6781F3BB12F002A2B8C /* CXSystemLoader.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
+		8BB5831220F9DF5C0066FD84 /* SLConfig.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD67B1F3BB12F002A2B8C /* SLConfig.c */; };
+		8BB5831320F9DF5C0066FD84 /* SLLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD67C1F3BB12F002A2B8C /* SLLoader.c */; };
+		8BB5831420F9DF5C0066FD84 /* SLSystemLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD67D1F3BB12F002A2B8C /* SLSystemLoader.c */; };
+		8BB5831620F9DF7A0066FD84 /* libLoaderShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB5830220F9DF260066FD84 /* libLoaderShared.a */; };
+		8BB5831720F9E1670066FD84 /* XKMemory.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6971F3BB142002A2B8C /* XKMemory.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
+		8BB5832D20F9E28C0066FD84 /* SLGraphics.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB582E620F8900C0066FD84 /* SLGraphics.c */; };
+		8BB5832E20F9E28C0066FD84 /* SLSystemTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB582F420F8F8A00066FD84 /* SLSystemTable.c */; };
+		8BB5832F20F9E28C0066FD84 /* CXKernelLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6621F3BB12F002A2B8C /* CXKernelLoader.c */; };
+		8BB5833020F9E28C0066FD84 /* SLSMBIOS.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB582EE20F8ECFA0066FD84 /* SLSMBIOS.c */; };
+		8BB5833120F9E28C0066FD84 /* SLSymbolStubs.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6661F3BB12F002A2B8C /* SLSymbolStubs.c */; };
+		8BB5833320F9E28C0066FD84 /* SLDebug.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6631F3BB12F002A2B8C /* SLDebug.c */; };
+		8BB5833520F9E3460066FD84 /* XKMemory.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6971F3BB142002A2B8C /* XKMemory.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
+		8BB5833620F9E3460066FD84 /* XKStandardIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6981F3BB142002A2B8C /* XKStandardIO.c */; };
+		8BB5833720F9E3460066FD84 /* XKUnicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6991F3BB142002A2B8C /* XKUnicode.c */; };
+		8BB5833820F9E3460066FD84 /* SLRuntimeServices.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB582E820F8902E0066FD84 /* SLRuntimeServices.c */; };
+		8BB5833920F9E3460066FD84 /* XKDebugLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD69B1F3BB142002A2B8C /* XKDebugLog.c */; };
+		8BB5833A20F9E3460066FD84 /* XKLog2.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD69D1F3BB142002A2B8C /* XKLog2.c */; };
+		8BB5833B20F9E3460066FD84 /* XKProcessor.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD69E1F3BB142002A2B8C /* XKProcessor.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
+		8BB5833C20F9E3460066FD84 /* XKSerial.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD69F1F3BB142002A2B8C /* XKSerial.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
+		8BB5833F20F9E3910066FD84 /* libLoaderShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB5830220F9DF260066FD84 /* libLoaderShared.a */; };
+		8BB5834420F9E8E50066FD84 /* SLVideo.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB5834320F9E8E50066FD84 /* SLVideo.c */; };
+		8BBC367C219FF9C900B78BEB /* SLBootConsole.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC367B219FF9C900B78BEB /* SLBootConsole.c */; };
+		8BBC367E219FFC9100B78BEB /* SLLoaderIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC367D219FFC9100B78BEB /* SLLoaderIO.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8B0D46F221A5CB30009C1AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B0D46EE21A5CB30009C1AB9 /* build-bootlogo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B7E52891EA2D49800E8EE2F;
+			remoteInfo = "build-bootlogo";
+		};
 		8B1FD7301F3BB383002A2B8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8B1FD6001F3BAEB1002A2B8C /* Project object */;
@@ -198,6 +200,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8BB5828E20F7EACB0066FD84;
 			remoteInfo = CopySystemHeaders;
+		};
+		8BB5833D20F9E3810066FD84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1FD6001F3BAEB1002A2B8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BB5830120F9DF260066FD84;
+			remoteInfo = LoaderShared;
+		};
+		8BB5834020F9E3970066FD84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1FD6001F3BAEB1002A2B8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BB5830120F9DF260066FD84;
+			remoteInfo = LoaderShared;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -369,9 +385,8 @@
 			dstSubfolderSpec = 16;
 			files = (
 				8BB582CB20F7ECA10066FD84 /* SLBase.h in CopyFiles */,
-				8BB582CC20F7ECA10066FD84 /* SLBasicDebug.h in CopyFiles */,
 				8BB582CD20F7ECA10066FD84 /* SLBasicIO.h in CopyFiles */,
-				8BB582CE20F7ECA10066FD84 /* SLConfigFile.h in CopyFiles */,
+				8BB582CE20F7ECA10066FD84 /* SLConfig.h in CopyFiles */,
 				8BB582CF20F7ECA10066FD84 /* SLLibrary.h in CopyFiles */,
 				8BB582D020F7ECA10066FD84 /* SLLoader.h in CopyFiles */,
 				8BB582D120F7ECA10066FD84 /* SLMach-O.h in CopyFiles */,
@@ -390,7 +405,6 @@
 				8BB582D520F7ECB90066FD84 /* SLBlockIO.h in CopyFiles */,
 				8BB582D620F7ECB90066FD84 /* SLBootConsole.h in CopyFiles */,
 				8BB582D720F7ECB90066FD84 /* SLBootServices.h in CopyFiles */,
-				8BB582D820F7ECB90066FD84 /* SLEFI.h in CopyFiles */,
 				8BB582D920F7ECB90066FD84 /* SLFile.h in CopyFiles */,
 				8BB582DA20F7ECB90066FD84 /* SLGraphics.h in CopyFiles */,
 				8BB582DB20F7ECB90066FD84 /* SLLoadedImage.h in CopyFiles */,
@@ -412,6 +426,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8B0D46E021A2C1BF009C1AB9 /* SLBootServices.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLBootServices.c; sourceTree = "<group>"; };
+		8B0D46E421A40031009C1AB9 /* XKBootConfig.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = XKBootConfig.c; sourceTree = "<group>"; };
+		8B0D46E621A402B4009C1AB9 /* SLSerialConsole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLSerialConsole.h; sourceTree = "<group>"; };
+		8B0D46E721A40678009C1AB9 /* SLSerialConsole.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SLSerialConsole.c; sourceTree = "<group>"; };
+		8B0D46EB21A41B04009C1AB9 /* KernelLoader.order */ = {isa = PBXFileReference; lastKnownFileType = text; path = KernelLoader.order; sourceTree = "<group>"; };
+		8B0D46ED21A534E8009C1AB9 /* SLVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLVideo.h; sourceTree = "<group>"; };
+		8B0D46EE21A5CB30009C1AB9 /* build-bootlogo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "build-bootlogo.xcodeproj"; path = "../Tools/build-bootlogo/build-bootlogo.xcodeproj"; sourceTree = "<group>"; };
 		8B1FD60A1F3BAECF002A2B8C /* Kernel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Kernel; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1FD6161F3BAEE1002A2B8C /* KernelLoader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KernelLoader; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1FD6211F3BAEF1002A2B8C /* CXSystemLoader.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = CXSystemLoader.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -421,27 +442,18 @@
 		8B1FD6391F3BAF35002A2B8C /* release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		8B1FD6621F3BB12F002A2B8C /* CXKernelLoader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CXKernelLoader.c; sourceTree = "<group>"; };
 		8B1FD6631F3BB12F002A2B8C /* SLDebug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLDebug.c; sourceTree = "<group>"; };
-		8B1FD6641F3BB12F002A2B8C /* SLLoader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLLoader.c; sourceTree = "<group>"; };
-		8B1FD6651F3BB12F002A2B8C /* SLSetupCPU.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = SLSetupCPU.s; sourceTree = "<group>"; };
 		8B1FD6661F3BB12F002A2B8C /* SLSymbolStubs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLSymbolStubs.c; sourceTree = "<group>"; };
-		8B1FD6671F3BB12F002A2B8C /* SLTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLTest.c; sourceTree = "<group>"; };
 		8B1FD6681F3BB12F002A2B8C /* XKBootLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKBootLogo.h; sourceTree = "<group>"; };
 		8B1FD66B1F3BB12F002A2B8C /* SLBlockIO.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLBlockIO.c; sourceTree = "<group>"; };
-		8B1FD66C1F3BB12F002A2B8C /* SLBootServices.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLBootServices.c; sourceTree = "<group>"; };
 		8B1FD66D1F3BB12F002A2B8C /* SLFile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLFile.c; sourceTree = "<group>"; };
-		8B1FD66E1F3BB12F002A2B8C /* SLGraphics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLGraphics.c; sourceTree = "<group>"; };
 		8B1FD66F1F3BB12F002A2B8C /* SLLoadedImage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLLoadedImage.c; sourceTree = "<group>"; };
-		8B1FD6701F3BB12F002A2B8C /* SLRuntimeServices.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLRuntimeServices.c; sourceTree = "<group>"; };
-		8B1FD6711F3BB12F002A2B8C /* SLSystemTable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLSystemTable.c; sourceTree = "<group>"; };
-		8B1FD6721F3BB12F002A2B8C /* SLBasicDebug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLBasicDebug.c; sourceTree = "<group>"; };
 		8B1FD6731F3BB12F002A2B8C /* SLLibrary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLLibrary.c; sourceTree = "<group>"; };
 		8B1FD6741F3BB12F002A2B8C /* SLMach-O.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "SLMach-O.c"; sourceTree = "<group>"; };
 		8B1FD6751F3BB12F002A2B8C /* SLMemoryAllocator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLMemoryAllocator.c; sourceTree = "<group>"; };
 		8B1FD6771F3BB12F002A2B8C /* CXSystemLoader.order */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CXSystemLoader.order; sourceTree = "<group>"; };
 		8B1FD6781F3BB12F002A2B8C /* CXSystemLoader.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = CXSystemLoader.s; sourceTree = "<group>"; };
 		8B1FD6791F3BB12F002A2B8C /* SLBasicIO.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLBasicIO.c; sourceTree = "<group>"; };
-		8B1FD67A1F3BB12F002A2B8C /* SLBootConsole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLBootConsole.c; sourceTree = "<group>"; };
-		8B1FD67B1F3BB12F002A2B8C /* SLConfigFile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLConfigFile.c; sourceTree = "<group>"; };
+		8B1FD67B1F3BB12F002A2B8C /* SLConfig.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLConfig.c; sourceTree = "<group>"; };
 		8B1FD67C1F3BB12F002A2B8C /* SLLoader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLLoader.c; sourceTree = "<group>"; };
 		8B1FD67D1F3BB12F002A2B8C /* SLSystemLoader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLSystemLoader.c; sourceTree = "<group>"; };
 		8B1FD6971F3BB142002A2B8C /* XKMemory.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = XKMemory.s; sourceTree = "<group>"; };
@@ -449,7 +461,6 @@
 		8B1FD6991F3BB142002A2B8C /* XKUnicode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XKUnicode.c; sourceTree = "<group>"; };
 		8B1FD69A1F3BB142002A2B8C /* XKBitmapFontData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKBitmapFontData.h; sourceTree = "<group>"; };
 		8B1FD69B1F3BB142002A2B8C /* XKDebugLog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XKDebugLog.c; sourceTree = "<group>"; };
-		8B1FD69C1F3BB142002A2B8C /* XKLog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XKLog.c; sourceTree = "<group>"; };
 		8B1FD69D1F3BB142002A2B8C /* XKLog2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XKLog2.c; sourceTree = "<group>"; };
 		8B1FD69E1F3BB142002A2B8C /* XKProcessor.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = XKProcessor.s; sourceTree = "<group>"; };
 		8B1FD69F1F3BB142002A2B8C /* XKSerial.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = XKSerial.s; sourceTree = "<group>"; };
@@ -473,7 +484,6 @@
 		8B1FD6D61F3BB195002A2B8C /* SLBlockIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBlockIO.h; sourceTree = "<group>"; };
 		8B1FD6D71F3BB195002A2B8C /* SLBootConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBootConsole.h; sourceTree = "<group>"; };
 		8B1FD6D81F3BB195002A2B8C /* SLBootServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBootServices.h; sourceTree = "<group>"; };
-		8B1FD6D91F3BB195002A2B8C /* SLEFI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEFI.h; sourceTree = "<group>"; };
 		8B1FD6DA1F3BB195002A2B8C /* SLFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLFile.h; sourceTree = "<group>"; };
 		8B1FD6DB1F3BB195002A2B8C /* SLGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLGraphics.h; sourceTree = "<group>"; };
 		8B1FD6DC1F3BB195002A2B8C /* SLLoadedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLoadedImage.h; sourceTree = "<group>"; };
@@ -481,9 +491,8 @@
 		8B1FD6DE1F3BB195002A2B8C /* SLSystemTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLSystemTable.h; sourceTree = "<group>"; };
 		8B1FD6E01F3BB195002A2B8C /* SLDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDebug.h; sourceTree = "<group>"; };
 		8B1FD6E11F3BB195002A2B8C /* SLBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBase.h; sourceTree = "<group>"; };
-		8B1FD6E21F3BB195002A2B8C /* SLBasicDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBasicDebug.h; sourceTree = "<group>"; };
 		8B1FD6E31F3BB195002A2B8C /* SLBasicIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBasicIO.h; sourceTree = "<group>"; };
-		8B1FD6E41F3BB195002A2B8C /* SLConfigFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLConfigFile.h; sourceTree = "<group>"; };
+		8B1FD6E41F3BB195002A2B8C /* SLConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLConfig.h; sourceTree = "<group>"; };
 		8B1FD6E51F3BB195002A2B8C /* SLLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLibrary.h; sourceTree = "<group>"; };
 		8B1FD6E61F3BB195002A2B8C /* SLLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLoader.h; sourceTree = "<group>"; };
 		8B1FD6E71F3BB195002A2B8C /* SLMach-O.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SLMach-O.h"; sourceTree = "<group>"; };
@@ -511,6 +520,19 @@
 		8B1FD7031F3BB1F5002A2B8C /* CoreDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDriver.h; sourceTree = "<group>"; };
 		8B1FD7051F3BB1F5002A2B8C /* CDPCIE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPCIE.h; sourceTree = "<group>"; };
 		8B1FD7351F3BB452002A2B8C /* cartool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cartool.xcodeproj; path = ../Tools/CAR/cartool.xcodeproj; sourceTree = "<group>"; };
+		8BB582E620F8900C0066FD84 /* SLGraphics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLGraphics.c; sourceTree = "<group>"; };
+		8BB582E820F8902E0066FD84 /* SLRuntimeServices.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLRuntimeServices.c; sourceTree = "<group>"; };
+		8BB582EC20F8BC240066FD84 /* SLSMBIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLSMBIOS.h; sourceTree = "<group>"; };
+		8BB582ED20F8BE210066FD84 /* SLKernelLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLKernelLoader.h; sourceTree = "<group>"; };
+		8BB582EE20F8ECFA0066FD84 /* SLSMBIOS.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SLSMBIOS.c; sourceTree = "<group>"; };
+		8BB582F420F8F8A00066FD84 /* SLSystemTable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SLSystemTable.c; sourceTree = "<group>"; };
+		8BB5830220F9DF260066FD84 /* libLoaderShared.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLoaderShared.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB5834220F9E3A90066FD84 /* XKAssemblyCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKAssemblyCode.h; sourceTree = "<group>"; };
+		8BB5834320F9E8E50066FD84 /* SLVideo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SLVideo.c; sourceTree = "<group>"; };
+		8BBC367A219FF86A00B78BEB /* SLLoaderIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLLoaderIO.h; sourceTree = "<group>"; };
+		8BBC367B219FF9C900B78BEB /* SLBootConsole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLBootConsole.c; sourceTree = "<group>"; };
+		8BBC367D219FFC9100B78BEB /* SLLoaderIO.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SLLoaderIO.c; sourceTree = "<group>"; };
+		8BBC369221A1366B00B78BEB /* XKBootConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKBootConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -525,10 +547,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB5833F20F9E3910066FD84 /* libLoaderShared.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8B1FD61E1F3BAEF1002A2B8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB5831620F9DF7A0066FD84 /* libLoaderShared.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB5830020F9DF260066FD84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -538,9 +569,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B0D46EF21A5CB30009C1AB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B0D46F321A5CB30009C1AB9 /* build-bootlogo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8B1FD5FF1F3BAEB1002A2B8C = {
 			isa = PBXGroup;
 			children = (
+				8B0D46EE21A5CB30009C1AB9 /* build-bootlogo.xcodeproj */,
 				8B1FD7351F3BB452002A2B8C /* cartool.xcodeproj */,
 				8B1FD6B31F3BB169002A2B8C /* headers */,
 				8B1FD6AB1F3BB15C002A2B8C /* CoreDriver */,
@@ -551,6 +591,7 @@
 				8B1FD6761F3BB12F002A2B8C /* CXSystemLoader */,
 				8B1FD6351F3BAF35002A2B8C /* Xcode Configs */,
 				8B1FD60B1F3BAECF002A2B8C /* Products */,
+				8BB5831520F9DF7A0066FD84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -560,6 +601,7 @@
 				8B1FD60A1F3BAECF002A2B8C /* Kernel */,
 				8B1FD6161F3BAEE1002A2B8C /* KernelLoader */,
 				8B1FD6211F3BAEF1002A2B8C /* CXSystemLoader.dylib */,
+				8BB5830220F9DF260066FD84 /* libLoaderShared.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -578,13 +620,15 @@
 		8B1FD6611F3BB12F002A2B8C /* CXKernelLoader */ = {
 			isa = PBXGroup;
 			children = (
+				8BB582F620F8F8A50066FD84 /* EFI */,
 				8B1FD6621F3BB12F002A2B8C /* CXKernelLoader.c */,
-				8B1FD6631F3BB12F002A2B8C /* SLDebug.c */,
-				8B1FD6641F3BB12F002A2B8C /* SLLoader.c */,
-				8B1FD6651F3BB12F002A2B8C /* SLSetupCPU.s */,
+				8BB5834320F9E8E50066FD84 /* SLVideo.c */,
+				8BB582EE20F8ECFA0066FD84 /* SLSMBIOS.c */,
 				8B1FD6661F3BB12F002A2B8C /* SLSymbolStubs.c */,
-				8B1FD6671F3BB12F002A2B8C /* SLTest.c */,
+				8B1FD6631F3BB12F002A2B8C /* SLDebug.c */,
+				8B0D46E721A40678009C1AB9 /* SLSerialConsole.c */,
 				8B1FD6681F3BB12F002A2B8C /* XKBootLogo.h */,
+				8B0D46EB21A41B04009C1AB9 /* KernelLoader.order */,
 			);
 			name = CXKernelLoader;
 			path = ../Source/Kernel/CXSystemLoader/CXKernelLoader;
@@ -593,38 +637,24 @@
 		8B1FD6691F3BB12F002A2B8C /* LoaderShared */ = {
 			isa = PBXGroup;
 			children = (
-				8B1FD66A1F3BB12F002A2B8C /* EFI */,
-				8B1FD6721F3BB12F002A2B8C /* SLBasicDebug.c */,
+				8B0D46E021A2C1BF009C1AB9 /* SLBootServices.c */,
 				8B1FD6731F3BB12F002A2B8C /* SLLibrary.c */,
 				8B1FD6741F3BB12F002A2B8C /* SLMach-O.c */,
+				8B1FD6791F3BB12F002A2B8C /* SLBasicIO.c */,
 				8B1FD6751F3BB12F002A2B8C /* SLMemoryAllocator.c */,
 			);
 			name = LoaderShared;
 			path = ../Source/Kernel/CXSystemLoader/SharedCode;
 			sourceTree = "<group>";
 		};
-		8B1FD66A1F3BB12F002A2B8C /* EFI */ = {
-			isa = PBXGroup;
-			children = (
-				8B1FD66B1F3BB12F002A2B8C /* SLBlockIO.c */,
-				8B1FD66C1F3BB12F002A2B8C /* SLBootServices.c */,
-				8B1FD66D1F3BB12F002A2B8C /* SLFile.c */,
-				8B1FD66E1F3BB12F002A2B8C /* SLGraphics.c */,
-				8B1FD66F1F3BB12F002A2B8C /* SLLoadedImage.c */,
-				8B1FD6701F3BB12F002A2B8C /* SLRuntimeServices.c */,
-				8B1FD6711F3BB12F002A2B8C /* SLSystemTable.c */,
-			);
-			path = EFI;
-			sourceTree = "<group>";
-		};
 		8B1FD6761F3BB12F002A2B8C /* CXSystemLoader */ = {
 			isa = PBXGroup;
 			children = (
+				8BB582EB20F890D70066FD84 /* EFI */,
 				8B1FD6771F3BB12F002A2B8C /* CXSystemLoader.order */,
 				8B1FD6781F3BB12F002A2B8C /* CXSystemLoader.s */,
-				8B1FD6791F3BB12F002A2B8C /* SLBasicIO.c */,
-				8B1FD67A1F3BB12F002A2B8C /* SLBootConsole.c */,
-				8B1FD67B1F3BB12F002A2B8C /* SLConfigFile.c */,
+				8B1FD67B1F3BB12F002A2B8C /* SLConfig.c */,
+				8BBC367D219FFC9100B78BEB /* SLLoaderIO.c */,
 				8B1FD67C1F3BB12F002A2B8C /* SLLoader.c */,
 				8B1FD67D1F3BB12F002A2B8C /* SLSystemLoader.c */,
 			);
@@ -637,11 +667,12 @@
 			children = (
 				8B1FD6961F3BB142002A2B8C /* C */,
 				8B1FD69A1F3BB142002A2B8C /* XKBitmapFontData.h */,
+				8BB582E820F8902E0066FD84 /* SLRuntimeServices.c */,
 				8B1FD69B1F3BB142002A2B8C /* XKDebugLog.c */,
-				8B1FD69C1F3BB142002A2B8C /* XKLog.c */,
 				8B1FD69D1F3BB142002A2B8C /* XKLog2.c */,
 				8B1FD69E1F3BB142002A2B8C /* XKProcessor.s */,
 				8B1FD69F1F3BB142002A2B8C /* XKSerial.s */,
+				8B0D46E421A40031009C1AB9 /* XKBootConfig.c */,
 			);
 			name = KernelShared;
 			path = ../Source/Kernel/SharedCode/source;
@@ -745,15 +776,12 @@
 			children = (
 				8B1FD6D51F3BB195002A2B8C /* EFI */,
 				8B1FD6DF1F3BB195002A2B8C /* Kernel */,
-				8B1FD6E11F3BB195002A2B8C /* SLBase.h */,
-				8B1FD6E21F3BB195002A2B8C /* SLBasicDebug.h */,
-				8B1FD6E31F3BB195002A2B8C /* SLBasicIO.h */,
-				8B1FD6E41F3BB195002A2B8C /* SLConfigFile.h */,
-				8B1FD6E51F3BB195002A2B8C /* SLLibrary.h */,
-				8B1FD6E61F3BB195002A2B8C /* SLLoader.h */,
-				8B1FD6E71F3BB195002A2B8C /* SLMach-O.h */,
+				8BB582FD20F9DDF20066FD84 /* Loader */,
 				8B1FD6E81F3BB195002A2B8C /* SLMemoryAllocator.h */,
-				8B1FD6E91F3BB195002A2B8C /* SLSystemLoader.h */,
+				8B1FD6E71F3BB195002A2B8C /* SLMach-O.h */,
+				8B1FD6E31F3BB195002A2B8C /* SLBasicIO.h */,
+				8B1FD6E51F3BB195002A2B8C /* SLLibrary.h */,
+				8B1FD6E11F3BB195002A2B8C /* SLBase.h */,
 				8B1FD6EA1F3BB195002A2B8C /* SystemLoader.h */,
 			);
 			name = SystemLoader;
@@ -766,7 +794,6 @@
 				8B1FD6D61F3BB195002A2B8C /* SLBlockIO.h */,
 				8B1FD6D71F3BB195002A2B8C /* SLBootConsole.h */,
 				8B1FD6D81F3BB195002A2B8C /* SLBootServices.h */,
-				8B1FD6D91F3BB195002A2B8C /* SLEFI.h */,
 				8B1FD6DA1F3BB195002A2B8C /* SLFile.h */,
 				8B1FD6DB1F3BB195002A2B8C /* SLGraphics.h */,
 				8B1FD6DC1F3BB195002A2B8C /* SLLoadedImage.h */,
@@ -780,6 +807,10 @@
 			isa = PBXGroup;
 			children = (
 				8B1FD6E01F3BB195002A2B8C /* SLDebug.h */,
+				8BB582EC20F8BC240066FD84 /* SLSMBIOS.h */,
+				8B0D46E621A402B4009C1AB9 /* SLSerialConsole.h */,
+				8B0D46ED21A534E8009C1AB9 /* SLVideo.h */,
+				8BB582ED20F8BE210066FD84 /* SLKernelLoader.h */,
 			);
 			path = Kernel;
 			sourceTree = "<group>";
@@ -790,6 +821,7 @@
 				8B1FD6EE1F3BB1EC002A2B8C /* C */,
 				8B1FD6FC1F3BB1F5002A2B8C /* CoreDriver */,
 				8B1FD6F31F3BB1EC002A2B8C /* Shared */,
+				8BB5834220F9E3A90066FD84 /* XKAssemblyCode.h */,
 				8B1FD6ED1F3BB1D3002A2B8C /* Kernel.h */,
 			);
 			name = Kernel;
@@ -811,7 +843,6 @@
 		8B1FD6F31F3BB1EC002A2B8C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				8B1FD6F41F3BB1EC002A2B8C /* XKAssemblyCode.h */,
 				8B1FD6F51F3BB1EC002A2B8C /* XKDebugLog.h */,
 				8B1FD6F61F3BB1EC002A2B8C /* XKLegacy.h */,
 				8B1FD6F71F3BB1EC002A2B8C /* XKLog.h */,
@@ -819,6 +850,8 @@
 				8B1FD6F91F3BB1EC002A2B8C /* XKShared.h */,
 				8B1FD6FA1F3BB1EC002A2B8C /* XKSharedTarget.h */,
 				8B1FD6FB1F3BB1EC002A2B8C /* XKUtilities.h */,
+				8B1FD6F41F3BB1EC002A2B8C /* XKAssemblyCode.h */,
+				8BBC369221A1366B00B78BEB /* XKBootConfig.h */,
 			);
 			name = Shared;
 			path = ../../../SharedCode/headers/Kernel/Shared;
@@ -863,10 +896,55 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8BB582EB20F890D70066FD84 /* EFI */ = {
+			isa = PBXGroup;
+			children = (
+				8BBC367B219FF9C900B78BEB /* SLBootConsole.c */,
+				8B1FD66F1F3BB12F002A2B8C /* SLLoadedImage.c */,
+				8B1FD66B1F3BB12F002A2B8C /* SLBlockIO.c */,
+				8B1FD66D1F3BB12F002A2B8C /* SLFile.c */,
+			);
+			path = EFI;
+			sourceTree = "<group>";
+		};
+		8BB582F620F8F8A50066FD84 /* EFI */ = {
+			isa = PBXGroup;
+			children = (
+				8BB582E620F8900C0066FD84 /* SLGraphics.c */,
+				8BB582F420F8F8A00066FD84 /* SLSystemTable.c */,
+			);
+			path = EFI;
+			sourceTree = "<group>";
+		};
+		8BB582FD20F9DDF20066FD84 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				8B1FD6E41F3BB195002A2B8C /* SLConfig.h */,
+				8B1FD6E91F3BB195002A2B8C /* SLSystemLoader.h */,
+				8BBC367A219FF86A00B78BEB /* SLLoaderIO.h */,
+				8B1FD6E61F3BB195002A2B8C /* SLLoader.h */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		8BB5831520F9DF7A0066FD84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
 		8B1FD61F1F3BAEF1002A2B8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB582FE20F9DF260066FD84 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -904,6 +982,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8BB5833E20F9E3810066FD84 /* PBXTargetDependency */,
 			);
 			name = KernelLoader;
 			productName = KernelLoader;
@@ -918,17 +997,35 @@
 				8B1FD61E1F3BAEF1002A2B8C /* Frameworks */,
 				8B1FD61F1F3BAEF1002A2B8C /* Headers */,
 				8B1FD72C1F3BB2F5002A2B8C /* CopyFiles */,
-				8B1FD72D1F3BB2F6002A2B8C /* ShellScript */,
+				8B1FD72D1F3BB2F6002A2B8C /* Run Script */,
 				8B1FD72F1F3BB33E002A2B8C /* Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8BB5834120F9E3970066FD84 /* PBXTargetDependency */,
 			);
 			name = CXSystemLoader;
 			productName = CXSystemLoader;
 			productReference = 8B1FD6211F3BAEF1002A2B8C /* CXSystemLoader.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
+		};
+		8BB5830120F9DF260066FD84 /* LoaderShared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB5830320F9DF270066FD84 /* Build configuration list for PBXNativeTarget "LoaderShared" */;
+			buildPhases = (
+				8BB582FE20F9DF260066FD84 /* Headers */,
+				8BB582FF20F9DF260066FD84 /* Sources */,
+				8BB5830020F9DF260066FD84 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoaderShared;
+			productName = LoaderShared;
+			productReference = 8BB5830220F9DF260066FD84 /* libLoaderShared.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -936,7 +1033,7 @@
 		8B1FD6001F3BAEB1002A2B8C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				TargetAttributes = {
 					8B1FD6091F3BAECF002A2B8C = {
 						CreatedOnToolsVersion = 8.1;
@@ -962,6 +1059,9 @@
 						CreatedOnToolsVersion = 10.0;
 						ProvisioningStyle = Automatic;
 					};
+					8BB5830120F9DF260066FD84 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = 8B1FD6031F3BAEB1002A2B8C /* Build configuration list for PBXProject "Corona-X" */;
@@ -976,6 +1076,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 8B0D46EF21A5CB30009C1AB9 /* Products */;
+					ProjectRef = 8B0D46EE21A5CB30009C1AB9 /* build-bootlogo.xcodeproj */;
+				},
+				{
 					ProductGroup = 8B1FD7361F3BB452002A2B8C /* Products */;
 					ProjectRef = 8B1FD7351F3BB452002A2B8C /* cartool.xcodeproj */;
 				},
@@ -988,11 +1092,19 @@
 				8B1FD62D1F3BAF0C002A2B8C /* System Image */,
 				8B1FD6311F3BAF1F002A2B8C /* System Loader (Package) */,
 				8BB5828E20F7EACB0066FD84 /* CopySystemHeaders */,
+				8BB5830120F9DF260066FD84 /* LoaderShared */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		8B0D46F321A5CB30009C1AB9 /* build-bootlogo */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "build-bootlogo";
+			remoteRef = 8B0D46F221A5CB30009C1AB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		8B1FD73A1F3BB453002A2B8C /* cartool */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
@@ -1003,13 +1115,14 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8B1FD72D1F3BB2F6002A2B8C /* ShellScript */ = {
+		8B1FD72D1F3BB2F6002A2B8C /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1042,7 +1155,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"${BUILT_PRODUCTS_DIR}\"\n\nmkdir -p boot\ncp KernelLoader boot/KernelLoader\ncp Kernel boot/Kernel\ntouch boot/BootConfig\n\nrm -f BootX.car\n./cartool -c --subtype=BootX --arch=x86_64 --bootID=0x0048 --kernel-loader=boot/KernelLoader --kernel=boot/Kernel --boot-config=boot/BootConfig boot BootX.car\n\nmkdir -p ${SYSTEM_ROOT}/boot\ncp BootX.car ${SYSTEM_ROOT}/boot/BootX.car\n\nBUILD_COUNTER=$(cat \"${SRCROOT}/build_number\")\nBUILD_ID=$((BUILD_COUNTER + 1))\necho ${BUILD_ID} > \"${SRCROOT}/build_number\"\n\nrm -f SystemImage.car\n./cartool -c --subtype=SystemImage --os-type=Corona-X --os-major-version=1 --os-revision=A --build-type=development --build-id=${BUILD_ID} --boot-archive=${SYSTEM_ROOT}/boot/BootX.car System SystemImage.car\n";
+			shellScript = "cd \"${BUILT_PRODUCTS_DIR}\"\n\nmkdir -p boot\ncp KernelLoader boot/KernelLoader\ncp Kernel boot/Kernel\ntouch boot/BootConfig\n\nrm -f BootX.car\n./cartool -c --subtype=BootX --arch=x86_64 --bootID=0x0048 --kernel-loader=boot/KernelLoader --kernel=boot/Kernel --boot-config=boot/BootConfig boot BootX.car\n\nmkdir -p ${SYSTEM_ROOT}/boot\ncp BootX.car ${SYSTEM_ROOT}/boot/BootX.car\n\nBUILD_COUNTER=$(cat \"${SRCROOT}/build_number\")\nBUILD_ID=$((BUILD_COUNTER + 1))\necho ${BUILD_ID} > \"${SRCROOT}/build_number\"\n\nrm -f SystemImage.car\n./cartool -c --subtype=SystemImage --os-type=Corona-X --os-major-version=1 --os-revision=A --build-type=development --build-id=${BUILD_ID} --boot-archive=${SYSTEM_ROOT}/boot/BootX.car System SystemImage.car\n\nif [ \\( -e \"/tmp/corona\" \\) ]\nthen\n    cp SystemImage.car /tmp/corona/SystemImage.car\nfi\n";
 		};
 		8B1FD73D1F3BB54C002A2B8C /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1056,7 +1169,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# assumes image is mounted at /tmp/corona/mnt\n\ncd \"${BUILT_PRODUCTS_DIR}\"\n\n# QEMU doesn't let me debug on a USB while it's mounted...\ndiskutil mount -mountPoint /tmp/corona/mnt /dev/disk2s1\n\nmkdir -p /tmp/corona/mnt/EFI/corona\ncp CXSystemLoader.efi /tmp/corona/mnt/EFI/corona/\n\ndiskutil unmountDisk /dev/disk2\n";
+			shellScript = "# assumes image is mounted at /tmp/corona/mnt\n\ncd \"${BUILT_PRODUCTS_DIR}\"\n\n# QEMU doesn't let me debug on a USB while it's mounted...\ndiskutil mount -mountPoint /tmp/corona/mnt /dev/disk3s1\n\nmkdir -p /tmp/corona/mnt/EFI/corona\ncp CXSystemLoader.efi /tmp/corona/mnt/EFI/corona/\n\ndiskutil unmountDisk /dev/disk3\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1065,9 +1178,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B1FD7071F3BB214002A2B8C /* XKMemory.s in Sources */,
-				8B1FD7081F3BB214002A2B8C /* XKStandardIO.c in Sources */,
-				8B1FD7091F3BB214002A2B8C /* XKUnicode.c in Sources */,
 				8B1FD7061F3BB206002A2B8C /* stub.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1076,23 +1186,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BA52D44203D3F220096A9C6 /* XKSerial.s in Sources */,
-				8B1FD7181F3BB290002A2B8C /* CXKernelLoader.c in Sources */,
-				8B1FD7191F3BB2AD002A2B8C /* SLSymbolStubs.c in Sources */,
-				8B1FD70D1F3BB286002A2B8C /* SLBlockIO.c in Sources */,
-				8B1FD70E1F3BB286002A2B8C /* SLBootServices.c in Sources */,
-				8B1FD70F1F3BB286002A2B8C /* SLFile.c in Sources */,
-				8B1FD7101F3BB286002A2B8C /* SLGraphics.c in Sources */,
-				8B1FD7111F3BB286002A2B8C /* SLLoadedImage.c in Sources */,
-				8B1FD7121F3BB286002A2B8C /* SLRuntimeServices.c in Sources */,
-				8B1FD7131F3BB286002A2B8C /* SLSystemTable.c in Sources */,
-				8B1FD7141F3BB286002A2B8C /* SLBasicDebug.c in Sources */,
-				8B1FD7151F3BB286002A2B8C /* SLLibrary.c in Sources */,
-				8B1FD7161F3BB286002A2B8C /* SLMach-O.c in Sources */,
-				8B1FD7171F3BB286002A2B8C /* SLMemoryAllocator.c in Sources */,
-				8B1FD70A1F3BB27B002A2B8C /* XKMemory.s in Sources */,
-				8B1FD70B1F3BB27B002A2B8C /* XKStandardIO.c in Sources */,
-				8B1FD70C1F3BB27B002A2B8C /* XKUnicode.c in Sources */,
+				8B0D46E921A406A0009C1AB9 /* SLSerialConsole.c in Sources */,
+				8BB5833520F9E3460066FD84 /* XKMemory.s in Sources */,
+				8BB5833620F9E3460066FD84 /* XKStandardIO.c in Sources */,
+				8BB5833720F9E3460066FD84 /* XKUnicode.c in Sources */,
+				8BB5833820F9E3460066FD84 /* SLRuntimeServices.c in Sources */,
+				8BB5833920F9E3460066FD84 /* XKDebugLog.c in Sources */,
+				8BB5833A20F9E3460066FD84 /* XKLog2.c in Sources */,
+				8BB5833B20F9E3460066FD84 /* XKProcessor.s in Sources */,
+				8BB5833C20F9E3460066FD84 /* XKSerial.s in Sources */,
+				8BB5834420F9E8E50066FD84 /* SLVideo.c in Sources */,
+				8BB5832D20F9E28C0066FD84 /* SLGraphics.c in Sources */,
+				8BB5832E20F9E28C0066FD84 /* SLSystemTable.c in Sources */,
+				8BB5832F20F9E28C0066FD84 /* CXKernelLoader.c in Sources */,
+				8BB5833020F9E28C0066FD84 /* SLSMBIOS.c in Sources */,
+				8BB5833120F9E28C0066FD84 /* SLSymbolStubs.c in Sources */,
+				8BB5833320F9E28C0066FD84 /* SLDebug.c in Sources */,
+				8B0D46EA21A40CFF009C1AB9 /* XKBootConfig.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1100,24 +1210,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B1FD7261F3BB2E3002A2B8C /* CXSystemLoader.s in Sources */,
-				8B1FD7271F3BB2E3002A2B8C /* SLBasicIO.c in Sources */,
-				8B1FD7281F3BB2E3002A2B8C /* SLBootConsole.c in Sources */,
-				8B1FD7291F3BB2E3002A2B8C /* SLConfigFile.c in Sources */,
-				8B1FD72A1F3BB2E3002A2B8C /* SLLoader.c in Sources */,
-				8B1FD72B1F3BB2E3002A2B8C /* SLSystemLoader.c in Sources */,
-				8B1FD71B1F3BB2DC002A2B8C /* SLBlockIO.c in Sources */,
-				8B1FD71C1F3BB2DC002A2B8C /* SLBootServices.c in Sources */,
-				8B1FD71D1F3BB2DC002A2B8C /* SLFile.c in Sources */,
-				8B1FD71E1F3BB2DC002A2B8C /* SLGraphics.c in Sources */,
-				8B1FD71F1F3BB2DC002A2B8C /* SLLoadedImage.c in Sources */,
-				8B1FD7201F3BB2DC002A2B8C /* SLRuntimeServices.c in Sources */,
-				8B1FD7211F3BB2DC002A2B8C /* SLSystemTable.c in Sources */,
-				8B1FD7221F3BB2DC002A2B8C /* SLBasicDebug.c in Sources */,
-				8B1FD7231F3BB2DC002A2B8C /* SLLibrary.c in Sources */,
-				8B1FD7241F3BB2DC002A2B8C /* SLMach-O.c in Sources */,
-				8B1FD7251F3BB2DC002A2B8C /* SLMemoryAllocator.c in Sources */,
-				8B1FD71A1F3BB2CE002A2B8C /* XKMemory.s in Sources */,
+				8BB5830E20F9DF560066FD84 /* SLLoadedImage.c in Sources */,
+				8BB5830F20F9DF560066FD84 /* SLBlockIO.c in Sources */,
+				8BBC367C219FF9C900B78BEB /* SLBootConsole.c in Sources */,
+				8BBC367E219FFC9100B78BEB /* SLLoaderIO.c in Sources */,
+				8BB5831020F9DF560066FD84 /* SLFile.c in Sources */,
+				8BB5831120F9DF5C0066FD84 /* CXSystemLoader.s in Sources */,
+				8BB5831220F9DF5C0066FD84 /* SLConfig.c in Sources */,
+				8BB5831320F9DF5C0066FD84 /* SLLoader.c in Sources */,
+				8BB5831420F9DF5C0066FD84 /* SLSystemLoader.c in Sources */,
+				8BB5831720F9E1670066FD84 /* XKMemory.s in Sources */,
+				8B0D46E321A3F045009C1AB9 /* SLRuntimeServices.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BB582FF20F9DF260066FD84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0D46E221A3EFD2009C1AB9 /* SLBootServices.c in Sources */,
+				8BB5830A20F9DF3A0066FD84 /* SLLibrary.c in Sources */,
+				8BB5830B20F9DF3A0066FD84 /* SLMach-O.c in Sources */,
+				8BB5830C20F9DF3A0066FD84 /* SLBasicIO.c in Sources */,
+				8BB5830D20F9DF3A0066FD84 /* SLMemoryAllocator.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1149,6 +1264,16 @@
 			target = 8BB5828E20F7EACB0066FD84 /* CopySystemHeaders */;
 			targetProxy = 8BB5829320F7EB2E0066FD84 /* PBXContainerItemProxy */;
 		};
+		8BB5833E20F9E3810066FD84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BB5830120F9DF260066FD84 /* LoaderShared */;
+			targetProxy = 8BB5833D20F9E3810066FD84 /* PBXContainerItemProxy */;
+		};
+		8BB5834120F9E3970066FD84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BB5830120F9DF260066FD84 /* LoaderShared */;
+			targetProxy = 8BB5834020F9E3970066FD84 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -1173,6 +1298,10 @@
 		8B1FD60F1F3BAECF002A2B8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"kCXKernelCode=1",
+				);
 				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = (
 					"-nostdlib",
@@ -1190,6 +1319,10 @@
 		8B1FD6101F3BAECF002A2B8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"kCXKernelCode=1",
+				);
 				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = (
 					"-nostdlib",
@@ -1209,6 +1342,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -1235,6 +1369,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -1260,9 +1395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = "";
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"kCXBootloaderCode=1",
@@ -1282,9 +1415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = "";
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"kCXBootloaderCode=1",
@@ -1340,6 +1471,10 @@
 		8B1FD63B1F3BAF39002A2B8C /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"kCXKernelCode=1",
+				);
 				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = (
 					"-nostdlib",
@@ -1359,6 +1494,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -1384,9 +1520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = "";
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"kCXBootloaderCode=1",
@@ -1436,6 +1570,60 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8BB5830420F9DF270066FD84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"kCXBootloaderCode=1",
+				);
+				OTHER_LDFLAGS = (
+					"-nostdlib",
+					"-nodefaultlibs",
+					"-seg1addr",
+					0x1000,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8BB5830520F9DF270066FD84 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"kCXBootloaderCode=1",
+				);
+				OTHER_LDFLAGS = (
+					"-nostdlib",
+					"-nodefaultlibs",
+					"-seg1addr",
+					0x1000,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Development;
+		};
+		8BB5830620F9DF270066FD84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"kCXBootloaderCode=1",
+				);
+				OTHER_LDFLAGS = (
+					"-nostdlib",
+					"-nodefaultlibs",
+					"-seg1addr",
+					0x1000,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1509,6 +1697,16 @@
 				8BB5828F20F7EACB0066FD84 /* Debug */,
 				8BB5829020F7EACB0066FD84 /* Development */,
 				8BB5829120F7EACB0066FD84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BB5830320F9DF270066FD84 /* Build configuration list for PBXNativeTarget "LoaderShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB5830420F9DF270066FD84 /* Debug */,
+				8BB5830520F9DF270066FD84 /* Development */,
+				8BB5830620F9DF270066FD84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
