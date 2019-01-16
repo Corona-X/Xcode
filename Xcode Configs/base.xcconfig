@@ -7,8 +7,8 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/../Source/Kernel/SharedCode/headers $(SRCROOT)/
 GCC_ENABLE_KERNEL_DEVELOPMENT = YES
 CLANG_STATIC_ANALYZER_MODE = deep
 
-OTHER_CFLAGS = -fshort-wchar -fpie
-WARNING_CFLAGS = -Wall -Werror -Wextra -Wno-char-subscripts -Wno-incompatible-pointer-types -fdiagnostics-show-option -fno-stack-protector
+OTHER_CFLAGS = -fshort-wchar -fpie -ffreestanding
+WARNING_CFLAGS = -Wall -Werror -Wextra -Wno-char-subscripts -Wno-incompatible-pointer-types -fdiagnostics-show-option -fno-stack-protector -mno-red-zone
 GCC_CHAR_IS_UNSIGNED_CHAR = YES
 GCC_C_LANGUAGE_STANDARD = gnu11
 GCC_LINK_WITH_DYNAMIC_LIBRARIES = NO
