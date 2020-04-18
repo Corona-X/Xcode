@@ -69,13 +69,16 @@
 		8B1E65D221DEF41F00F4D712 /* SLProcessorCheck.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E65D121DEF41F00F4D712 /* SLProcessorCheck.c */; };
 		8B1FD7061F3BB206002A2B8C /* stub.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6A91F3BB151002A2B8C /* stub.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
 		8B1FD72E1F3BB2FE002A2B8C /* CXSystemLoader.order in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6771F3BB12F002A2B8C /* CXSystemLoader.order */; };
+		8B49CF302443F9BD00F0031C /* SLBootPageTables.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B49CF2F2443F9BD00F0031C /* SLBootPageTables.c */; };
+		8B62A64A21F025A000DE573D /* XKSegmentTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B62A64921F025A000DE573D /* XKSegmentTable.c */; };
 		8B9C044521EBA53F0070692F /* SLProcessorCheck.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C044421EBA4F10070692F /* SLProcessorCheck.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
+		8BAA55492442A4D600463A79 /* SLProcessor.s in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA55482442A4D600463A79 /* SLProcessor.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
 		8BB5829620F7EB4A0066FD84 /* Corona-X.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6B41F3BB169002A2B8C /* Corona-X.h */; };
 		8BB5829820F7EB710066FD84 /* Kernel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6ED1F3BB1D3002A2B8C /* Kernel.h */; };
-		8BB5829D20F7EB890066FD84 /* XKMemory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6EF1F3BB1EC002A2B8C /* XKMemory.h */; };
-		8BB5829E20F7EB890066FD84 /* XKStandardIO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F01F3BB1EC002A2B8C /* XKStandardIO.h */; };
-		8BB5829F20F7EB890066FD84 /* XKUnicode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F11F3BB1EC002A2B8C /* XKUnicode.h */; };
-		8BB582A020F7EB890066FD84 /* XKernelC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F21F3BB1EC002A2B8C /* XKernelC.h */; };
+		8BB5829D20F7EB890066FD84 /* CLMemory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6EF1F3BB1EC002A2B8C /* CLMemory.h */; };
+		8BB5829E20F7EB890066FD84 /* CLStandardIO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F01F3BB1EC002A2B8C /* CLStandardIO.h */; };
+		8BB5829F20F7EB890066FD84 /* CLUnicode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F11F3BB1EC002A2B8C /* CLUnicode.h */; };
+		8BB582A020F7EB890066FD84 /* KernelC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD6F21F3BB1EC002A2B8C /* KernelC.h */; };
 		8BB582A120F7EBBF0066FD84 /* CoreDriver.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B1FD7031F3BB1F5002A2B8C /* CoreDriver.h */; };
 		8BB582A220F7EBD00066FD84 /* CPBase.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 8B1FD6FE1F3BB1F5002A2B8C /* CPBase.h */; };
 		8BB582A320F7EBD00066FD84 /* CPDriverState.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 8B1FD6FF1F3BB1F5002A2B8C /* CPDriverState.h */; };
@@ -127,15 +130,15 @@
 		8BB5831320F9DF5C0066FD84 /* SLLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD67C1F3BB12F002A2B8C /* SLLoader.c */; };
 		8BB5831420F9DF5C0066FD84 /* SLSystemLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD67D1F3BB12F002A2B8C /* SLSystemLoader.c */; };
 		8BB5831620F9DF7A0066FD84 /* libLoaderShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB5830220F9DF260066FD84 /* libLoaderShared.a */; };
-		8BB5831720F9E1670066FD84 /* XKMemory.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6971F3BB142002A2B8C /* XKMemory.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
+		8BB5831720F9E1670066FD84 /* CLMemory.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6971F3BB142002A2B8C /* CLMemory.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
 		8BB5832D20F9E28C0066FD84 /* SLGraphics.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB582E620F8900C0066FD84 /* SLGraphics.c */; };
 		8BB5832E20F9E28C0066FD84 /* SLSystemTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB582F420F8F8A00066FD84 /* SLSystemTable.c */; };
 		8BB5832F20F9E28C0066FD84 /* CXKernelLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6621F3BB12F002A2B8C /* CXKernelLoader.c */; };
 		8BB5833020F9E28C0066FD84 /* SLSMBIOS.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB582EE20F8ECFA0066FD84 /* SLSMBIOS.c */; };
 		8BB5833120F9E28C0066FD84 /* SLSymbolStubs.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6661F3BB12F002A2B8C /* SLSymbolStubs.c */; };
-		8BB5833520F9E3460066FD84 /* XKMemory.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6971F3BB142002A2B8C /* XKMemory.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
-		8BB5833620F9E3460066FD84 /* XKStandardIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6981F3BB142002A2B8C /* XKStandardIO.c */; };
-		8BB5833720F9E3460066FD84 /* XKUnicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6991F3BB142002A2B8C /* XKUnicode.c */; };
+		8BB5833520F9E3460066FD84 /* CLMemory.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6971F3BB142002A2B8C /* CLMemory.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
+		8BB5833620F9E3460066FD84 /* CLStandardIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6981F3BB142002A2B8C /* CLStandardIO.c */; };
+		8BB5833720F9E3460066FD84 /* CLUnicode.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD6991F3BB142002A2B8C /* CLUnicode.c */; };
 		8BB5833820F9E3460066FD84 /* SLRuntimeServices.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB582E820F8902E0066FD84 /* SLRuntimeServices.c */; };
 		8BB5833B20F9E3460066FD84 /* XKProcessor.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD69E1F3BB142002A2B8C /* XKProcessor.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
 		8BB5833C20F9E3460066FD84 /* XKSerial.s in Sources */ = {isa = PBXBuildFile; fileRef = 8B1FD69F1F3BB142002A2B8C /* XKSerial.s */; settings = {COMPILER_FLAGS = "-DkCXAssemblyCode=1"; }; };
@@ -143,6 +146,7 @@
 		8BB5834420F9E8E50066FD84 /* SLVideo.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BB5834320F9E8E50066FD84 /* SLVideo.c */; };
 		8BBC367C219FF9C900B78BEB /* SLBootConsole.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC367B219FF9C900B78BEB /* SLBootConsole.c */; };
 		8BBC367E219FFC9100B78BEB /* SLLoaderIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC367D219FFC9100B78BEB /* SLLoaderIO.c */; };
+		8BD27AB1236BC9C900153C67 /* SLCorePower.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BD27AAF236BC9B700153C67 /* SLCorePower.c */; };
 		8BFCB76421EEA5E100F9D7E7 /* SLEarlyMemoryInit.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCB76321EEA5E100F9D7E7 /* SLEarlyMemoryInit.c */; };
 		8BFCB76821EEAF6800F9D7E7 /* XKBootConfig.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BBC369221A1366B00B78BEB /* XKBootConfig.h */; };
 		8BFCB76921EEAF6F00F9D7E7 /* XKPageTable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BC912DE21ED44EB0011BBBC /* XKPageTable.h */; };
@@ -290,10 +294,10 @@
 			dstPath = "${SYSTEM_ROOT}/Frameworks/Kernel.framework/Headers/C";
 			dstSubfolderSpec = 16;
 			files = (
-				8BB5829D20F7EB890066FD84 /* XKMemory.h in CopyFiles */,
-				8BB5829E20F7EB890066FD84 /* XKStandardIO.h in CopyFiles */,
-				8BB5829F20F7EB890066FD84 /* XKUnicode.h in CopyFiles */,
-				8BB582A020F7EB890066FD84 /* XKernelC.h in CopyFiles */,
+				8BB5829D20F7EB890066FD84 /* CLMemory.h in CopyFiles */,
+				8BB5829E20F7EB890066FD84 /* CLStandardIO.h in CopyFiles */,
+				8BB5829F20F7EB890066FD84 /* CLUnicode.h in CopyFiles */,
+				8BB582A020F7EB890066FD84 /* KernelC.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,9 +500,9 @@
 		8B1FD67B1F3BB12F002A2B8C /* SLConfig.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLConfig.c; sourceTree = "<group>"; };
 		8B1FD67C1F3BB12F002A2B8C /* SLLoader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLLoader.c; sourceTree = "<group>"; };
 		8B1FD67D1F3BB12F002A2B8C /* SLSystemLoader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLSystemLoader.c; sourceTree = "<group>"; };
-		8B1FD6971F3BB142002A2B8C /* XKMemory.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = XKMemory.s; sourceTree = "<group>"; };
-		8B1FD6981F3BB142002A2B8C /* XKStandardIO.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XKStandardIO.c; sourceTree = "<group>"; };
-		8B1FD6991F3BB142002A2B8C /* XKUnicode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XKUnicode.c; sourceTree = "<group>"; };
+		8B1FD6971F3BB142002A2B8C /* CLMemory.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = CLMemory.s; sourceTree = "<group>"; };
+		8B1FD6981F3BB142002A2B8C /* CLStandardIO.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLStandardIO.c; sourceTree = "<group>"; };
+		8B1FD6991F3BB142002A2B8C /* CLUnicode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLUnicode.c; sourceTree = "<group>"; };
 		8B1FD69E1F3BB142002A2B8C /* XKProcessor.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = XKProcessor.s; sourceTree = "<group>"; };
 		8B1FD69F1F3BB142002A2B8C /* XKSerial.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = XKSerial.s; sourceTree = "<group>"; };
 		8B1FD6A91F3BB151002A2B8C /* stub.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = stub.s; sourceTree = "<group>"; };
@@ -537,10 +541,10 @@
 		8B1FD6E91F3BB195002A2B8C /* SLSystemLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLSystemLoader.h; sourceTree = "<group>"; };
 		8B1FD6EA1F3BB195002A2B8C /* SystemLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemLoader.h; sourceTree = "<group>"; };
 		8B1FD6ED1F3BB1D3002A2B8C /* Kernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kernel.h; sourceTree = "<group>"; };
-		8B1FD6EF1F3BB1EC002A2B8C /* XKMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKMemory.h; sourceTree = "<group>"; };
-		8B1FD6F01F3BB1EC002A2B8C /* XKStandardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKStandardIO.h; sourceTree = "<group>"; };
-		8B1FD6F11F3BB1EC002A2B8C /* XKUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKUnicode.h; sourceTree = "<group>"; };
-		8B1FD6F21F3BB1EC002A2B8C /* XKernelC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKernelC.h; sourceTree = "<group>"; };
+		8B1FD6EF1F3BB1EC002A2B8C /* CLMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMemory.h; sourceTree = "<group>"; };
+		8B1FD6F01F3BB1EC002A2B8C /* CLStandardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLStandardIO.h; sourceTree = "<group>"; };
+		8B1FD6F11F3BB1EC002A2B8C /* CLUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLUnicode.h; sourceTree = "<group>"; };
+		8B1FD6F21F3BB1EC002A2B8C /* KernelC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KernelC.h; sourceTree = "<group>"; };
 		8B1FD6F61F3BB1EC002A2B8C /* XKLegacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKLegacy.h; sourceTree = "<group>"; };
 		8B1FD6F81F3BB1EC002A2B8C /* XKProcessorState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKProcessorState.h; sourceTree = "<group>"; };
 		8B1FD6F91F3BB1EC002A2B8C /* XKShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKShared.h; sourceTree = "<group>"; };
@@ -554,7 +558,14 @@
 		8B1FD7031F3BB1F5002A2B8C /* CoreDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDriver.h; sourceTree = "<group>"; };
 		8B1FD7051F3BB1F5002A2B8C /* CDPCIE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPCIE.h; sourceTree = "<group>"; };
 		8B1FD7351F3BB452002A2B8C /* cartool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cartool.xcodeproj; path = ../Tools/CAR/cartool.xcodeproj; sourceTree = "<group>"; };
+		8B49CF2F2443F9BD00F0031C /* SLBootPageTables.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SLBootPageTables.c; sourceTree = "<group>"; };
+		8B62A64921F025A000DE573D /* XKSegmentTable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = XKSegmentTable.c; sourceTree = "<group>"; };
+		8B62A64B21F025CB00DE573D /* XKSegmentTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKSegmentTable.h; sourceTree = "<group>"; };
+		8B62A64C21F025CD00DE573D /* XKSegmentTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKSegmentTable.h; sourceTree = "<group>"; };
+		8B62A64D21F025CF00DE573D /* XKSegmentTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XKSegmentTable.h; path = ../../../../CXK/headers/Kernel/XKSegmentTable.h; sourceTree = "<group>"; };
 		8B9C044421EBA4F10070692F /* SLProcessorCheck.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = SLProcessorCheck.s; sourceTree = "<group>"; };
+		8BAA55482442A4D600463A79 /* SLProcessor.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = SLProcessor.s; sourceTree = "<group>"; };
+		8BAA554C2442ADE300463A79 /* SLProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLProcessor.h; sourceTree = "<group>"; };
 		8BB582E620F8900C0066FD84 /* SLGraphics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLGraphics.c; sourceTree = "<group>"; };
 		8BB582E820F8902E0066FD84 /* SLRuntimeServices.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SLRuntimeServices.c; sourceTree = "<group>"; };
 		8BB582EC20F8BC240066FD84 /* SLSMBIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLSMBIOS.h; sourceTree = "<group>"; };
@@ -569,6 +580,8 @@
 		8BBC367D219FFC9100B78BEB /* SLLoaderIO.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SLLoaderIO.c; sourceTree = "<group>"; };
 		8BBC369221A1366B00B78BEB /* XKBootConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKBootConfig.h; sourceTree = "<group>"; };
 		8BC912DE21ED44EB0011BBBC /* XKPageTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKPageTable.h; sourceTree = "<group>"; };
+		8BD27AAF236BC9B700153C67 /* SLCorePower.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SLCorePower.c; sourceTree = "<group>"; };
+		8BD27AB2236BCA3200153C67 /* SLCorePower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLCorePower.h; sourceTree = "<group>"; };
 		8BFCB76321EEA5E100F9D7E7 /* SLEarlyMemoryInit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SLEarlyMemoryInit.c; sourceTree = "<group>"; };
 		8BFCB76721EEA60600F9D7E7 /* SLEarlyMemoryInit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLEarlyMemoryInit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -669,12 +682,15 @@
 			children = (
 				8BB582F620F8F8A50066FD84 /* EFI */,
 				8B1FD6621F3BB12F002A2B8C /* CXKernelLoader.c */,
+				8BD27AAF236BC9B700153C67 /* SLCorePower.c */,
 				8BFCB76321EEA5E100F9D7E7 /* SLEarlyMemoryInit.c */,
 				8BB582EE20F8ECFA0066FD84 /* SLSMBIOS.c */,
 				8B1FD6661F3BB12F002A2B8C /* SLSymbolStubs.c */,
 				8B0D46E721A40678009C1AB9 /* SLSerialConsole.c */,
 				8B1E65D121DEF41F00F4D712 /* SLProcessorCheck.c */,
 				8B9C044421EBA4F10070692F /* SLProcessorCheck.s */,
+				8BAA55482442A4D600463A79 /* SLProcessor.s */,
+				8B49CF2F2443F9BD00F0031C /* SLBootPageTables.c */,
 				8BB5834320F9E8E50066FD84 /* SLVideo.c */,
 				8B1FD6681F3BB12F002A2B8C /* XKBootLogo.h */,
 				8B0D46EB21A41B04009C1AB9 /* KernelLoader.order */,
@@ -727,9 +743,9 @@
 		8B1FD6961F3BB142002A2B8C /* C */ = {
 			isa = PBXGroup;
 			children = (
-				8B1FD6971F3BB142002A2B8C /* XKMemory.s */,
-				8B1FD6981F3BB142002A2B8C /* XKStandardIO.c */,
-				8B1FD6991F3BB142002A2B8C /* XKUnicode.c */,
+				8B1FD6971F3BB142002A2B8C /* CLMemory.s */,
+				8B1FD6981F3BB142002A2B8C /* CLStandardIO.c */,
+				8B1FD6991F3BB142002A2B8C /* CLUnicode.c */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -738,6 +754,7 @@
 			isa = PBXGroup;
 			children = (
 				8B1FD6A91F3BB151002A2B8C /* stub.s */,
+				8B62A64921F025A000DE573D /* XKSegmentTable.c */,
 			);
 			name = Kernel;
 			path = ../Source/Kernel/CXK/source;
@@ -854,9 +871,11 @@
 			children = (
 				8B1FD6E01F3BB195002A2B8C /* SLDebug.h */,
 				8BFCB76721EEA60600F9D7E7 /* SLEarlyMemoryInit.h */,
-				8BB582EC20F8BC240066FD84 /* SLSMBIOS.h */,
+				8BD27AB2236BCA3200153C67 /* SLCorePower.h */,
 				8B0D46E621A402B4009C1AB9 /* SLSerialConsole.h */,
+				8BB582EC20F8BC240066FD84 /* SLSMBIOS.h */,
 				8B1E65D021DEF1EA00F4D712 /* SLProcessorCheck.h */,
+				8BAA554C2442ADE300463A79 /* SLProcessor.h */,
 				8B0D46ED21A534E8009C1AB9 /* SLVideo.h */,
 				8BB582ED20F8BE210066FD84 /* SLKernelLoader.h */,
 			);
@@ -870,6 +889,7 @@
 				8B1FD6FC1F3BB1F5002A2B8C /* CoreDriver */,
 				8B1FD6F31F3BB1EC002A2B8C /* Shared */,
 				8BB5834220F9E3A90066FD84 /* XKAssemblyCode.h */,
+				8B62A64B21F025CB00DE573D /* XKSegmentTable.h */,
 				8B1FD6ED1F3BB1D3002A2B8C /* Kernel.h */,
 			);
 			name = Kernel;
@@ -879,10 +899,10 @@
 		8B1FD6EE1F3BB1EC002A2B8C /* C */ = {
 			isa = PBXGroup;
 			children = (
-				8B1FD6EF1F3BB1EC002A2B8C /* XKMemory.h */,
-				8B1FD6F01F3BB1EC002A2B8C /* XKStandardIO.h */,
-				8B1FD6F11F3BB1EC002A2B8C /* XKUnicode.h */,
-				8B1FD6F21F3BB1EC002A2B8C /* XKernelC.h */,
+				8B1FD6EF1F3BB1EC002A2B8C /* CLMemory.h */,
+				8B1FD6F01F3BB1EC002A2B8C /* CLStandardIO.h */,
+				8B1FD6F11F3BB1EC002A2B8C /* CLUnicode.h */,
+				8B1FD6F21F3BB1EC002A2B8C /* KernelC.h */,
 			);
 			name = C;
 			path = ../../../SharedCode/headers/Kernel/C;
@@ -891,6 +911,8 @@
 		8B1FD6F31F3BB1EC002A2B8C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8B62A64C21F025CD00DE573D /* XKSegmentTable.h */,
+				8B62A64D21F025CF00DE573D /* XKSegmentTable.h */,
 				8BBC369221A1366B00B78BEB /* XKBootConfig.h */,
 				8B1FD6F61F3BB1EC002A2B8C /* XKLegacy.h */,
 				8BC912DE21ED44EB0011BBBC /* XKPageTable.h */,
@@ -1228,7 +1250,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# assumes image is mounted at /tmp/corona/mnt\n\ncd \"${BUILT_PRODUCTS_DIR}\"\n\n# QEMU doesn't let me debug on a USB while it's mounted...\ndiskutil mount -mountPoint /tmp/corona/mnt /dev/disk3s1\n\nmkdir -p /tmp/corona/mnt/EFI/corona\ncp CXSystemLoader.efi /tmp/corona/mnt/EFI/corona/\n\ndiskutil unmountDisk /dev/disk3\n";
+			shellScript = "# assumes image is mounted at /tmp/corona/mnt\n\ncd \"${BUILT_PRODUCTS_DIR}\"\n\n# QEMU doesn't let me debug on a USB while it's mounted...\ndiskutil mount -mountPoint /tmp/corona/mnt /dev/disk2s1\n\nmkdir -p /tmp/corona/mnt/EFI/corona\ncp CXSystemLoader.efi /tmp/corona/mnt/EFI/corona/\n\ndiskutil unmountDisk /dev/disk2\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1238,6 +1260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B1FD7061F3BB206002A2B8C /* stub.s in Sources */,
+				8B62A64A21F025A000DE573D /* XKSegmentTable.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1248,12 +1271,14 @@
 				8B9C044521EBA53F0070692F /* SLProcessorCheck.s in Sources */,
 				8B0D46E921A406A0009C1AB9 /* SLSerialConsole.c in Sources */,
 				8BFCB76421EEA5E100F9D7E7 /* SLEarlyMemoryInit.c in Sources */,
-				8BB5833520F9E3460066FD84 /* XKMemory.s in Sources */,
-				8BB5833620F9E3460066FD84 /* XKStandardIO.c in Sources */,
-				8BB5833720F9E3460066FD84 /* XKUnicode.c in Sources */,
+				8BB5833520F9E3460066FD84 /* CLMemory.s in Sources */,
+				8BB5833620F9E3460066FD84 /* CLStandardIO.c in Sources */,
+				8BAA55492442A4D600463A79 /* SLProcessor.s in Sources */,
+				8BB5833720F9E3460066FD84 /* CLUnicode.c in Sources */,
 				8BB5833820F9E3460066FD84 /* SLRuntimeServices.c in Sources */,
 				8BB5833B20F9E3460066FD84 /* XKProcessor.s in Sources */,
 				8BB5833C20F9E3460066FD84 /* XKSerial.s in Sources */,
+				8B49CF302443F9BD00F0031C /* SLBootPageTables.c in Sources */,
 				8BB5834420F9E8E50066FD84 /* SLVideo.c in Sources */,
 				8BB5832D20F9E28C0066FD84 /* SLGraphics.c in Sources */,
 				8B1E65D221DEF41F00F4D712 /* SLProcessorCheck.c in Sources */,
@@ -1262,6 +1287,7 @@
 				8BB5833020F9E28C0066FD84 /* SLSMBIOS.c in Sources */,
 				8BB5833120F9E28C0066FD84 /* SLSymbolStubs.c in Sources */,
 				8B0D46EA21A40CFF009C1AB9 /* XKBootConfig.c in Sources */,
+				8BD27AB1236BC9C900153C67 /* SLCorePower.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1278,7 +1304,7 @@
 				8BB5831220F9DF5C0066FD84 /* SLConfig.c in Sources */,
 				8BB5831320F9DF5C0066FD84 /* SLLoader.c in Sources */,
 				8BB5831420F9DF5C0066FD84 /* SLSystemLoader.c in Sources */,
-				8BB5831720F9E1670066FD84 /* XKMemory.s in Sources */,
+				8BB5831720F9E1670066FD84 /* CLMemory.s in Sources */,
 				8B0D46E321A3F045009C1AB9 /* SLRuntimeServices.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
